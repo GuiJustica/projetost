@@ -1,98 +1,83 @@
+from datetime import datetime, timedelta
+from typing import Optional, List  # Importando o List
 from models.emprestimo import Emprestimo
-from datetime import datetime
-from exceptions.erros import LivroIndisponivelError, UsuarioComPendenciaError
+from services.usuario_service import UsuarioService
+from services.livro_service import LivroService
+from logger_config import configurar_logger
+from dao.emprestimo_dao import EmprestimoDAO
+from dao.database import criar_conexao
+
+
+logger = configurar_logger()
+logger.info("📖 Serviço de empréstimo inicializado.")
+DB_PATH = "biblioteca.db"
 
 class EmprestimoService:
-    def __init__(self, usuario_service, livro_service):
-        self.emprestimos = []
-        self.usuario_service = usuario_service
-        self.livro_service = livro_service
 
-    def criar_emprestimo(self, usuario_id, livro_id):
-        usuario = next((u for u in self.usuario_service.usuarios if u.id == usuario_id), None)
-        livro = next((l for l in self.livro_service.livros if l.id == livro_id), None)
+    def __init__(self, usuario_service: Optional[UsuarioService] = None,
+                 livro_service: Optional[LivroService] = None) -> None:
+        self.usuario_service = usuario_service or UsuarioService()
+        self.livro_service = livro_service or LivroService()
+        self.dao = EmprestimoDAO()  # Inicializa o DAO de empréstimos
 
-        # Validações de existência
+    def criar_emprestimo(self, usuario_id: int, livro_id: int) -> Optional[Emprestimo]:
+        """ Cria um novo empréstimo para um usuário e livro especificados. """
+        # Busca usuário e livro diretamente
+        usuario = next((u for u in self.usuario_service.listar_usuarios() if u.id == usuario_id), None)
+        livro = next((l for l in self.livro_service.listar_livros() if l.id == livro_id), None)
+
         if not usuario:
-            print("⚠️ Usuário não encontrado.")
-            return
+            logger.warning("⚠️ Usuário não encontrado.")
+            return None
         if not livro:
-            print("⚠️ Livro não encontrado.")
-            return
+            logger.warning("⚠️ Livro não encontrado.")
+            return None
 
-        # ✅ Regra 1: Limite de empréstimos e multa pendente
-        emprestimos_ativos = [e for e in self.emprestimos if e.usuario.id == usuario.id and e.ativo]
-        if len(emprestimos_ativos) >= 3:
-            print("❌ Usuário já possui 3 empréstimos ativos.")
-            return
-        if usuario.multa > 0:
-            print(f"❌ Usuário possui multa pendente de R${usuario.multa:.2f}.")
-            return
-        if usuario.bloqueado:
-            print("🚫 Usuário bloqueado! Pague as multas para liberar novos empréstimos.")
-            return
-
-        # Livro disponível?
-        if livro.emprestado:
-            print("❌ Este livro já está emprestado.")
-            return
-
-        # Registrar empréstimo
-        livro.emprestado = True
-        novo_id = len(self.emprestimos) + 1
-        emprestimo = Emprestimo(novo_id, usuario, livro)
-        self.emprestimos.append(emprestimo)
-        print(f"✅ Empréstimo registrado com sucesso! ({livro.titulo} → {usuario.nome})")
-
-    def listar_emprestimos(self):
-        if not self.emprestimos:
-            print("Nenhum empréstimo registrado.")
-        else:
-            for emp in self.emprestimos:
-                print(emp)
-
-    def devolver_livro(self, emprestimo_id):
-        emprestimo = next((e for e in self.emprestimos if e.id == emprestimo_id and e.ativo), None)
-        if not emprestimo:
-            print("⚠️ Empréstimo não encontrado ou já devolvido.")
-            return
-
-        emprestimo.ativo = False
-        emprestimo.livro.emprestado = False
-        emprestimo.data_devolucao = datetime.now()
-
-        # ✅ Regra 2: Cálculo de multa por atraso
-        dias_atraso = (emprestimo.data_devolucao - emprestimo.prazo).days
-        if dias_atraso > 0:
-            multa = dias_atraso * 2.0
-            emprestimo.usuario.aplicar_multa(multa)
-            print(f"⚠️ Livro devolvido com {dias_atraso} dias de atraso. Multa: R${multa:.2f}")
-        else:
-            print("✅ Livro devolvido no prazo.")
-
-        # ✅ Regra 3: Bloqueio automático se multa > 20
-        if emprestimo.usuario.bloqueado:
-            print("🚫 Usuário bloqueado por excesso de multas (acima de R$20,00).")
-
-    def pagar_multa(self, usuario_id, valor):
-        usuario = next((u for u in self.usuario_service.usuarios if u.id == usuario_id), None)
-        if not usuario:
-            print("⚠️ Usuário não encontrado.")
-            return
-
-        usuario.pagar_multa(valor)
-        print(f"💰 Multa paga! Novo saldo: R${usuario.multa:.2f}")
-
-
-
-    def realizar_emprestimo(usuario, livro, emprestimos):
+        # Verifica se o livro está disponível
         if not livro.disponivel:
-            raise LivroIndisponivelError(livro.titulo)
-        if usuario.multa > 0:
-            raise UsuarioComPendenciaError(usuario.nome)
+            print(f"❌ O livro '{livro.titulo}' já está emprestado.")
+            return None
 
-        novo = Emprestimo(len(emprestimos)+1, usuario, livro)
-        emprestimos.append(novo)
+        # Registra o empréstimo no banco
+        data_emprestimo = datetime.now()
+
+
+        emprestimo = Emprestimo(None, usuario, livro, data_emprestimo)
+        self.dao.criar(emprestimo)  # Cria o empréstimo no banco
+
+        # Marca o livro como não disponível
         livro.disponivel = False
-        return novo
 
+        # Retorna o objeto do empréstimo
+        logger.info(f"✅ Empréstimo registrado: {livro.titulo} → {usuario.nome}")
+        return emprestimo
+
+    def listar_emprestimos(self) -> List[Emprestimo]:
+        """ Retorna uma lista de todos os empréstimos registrados no sistema. """
+        emprestimos = self.dao.listar()  # Recupera todos os empréstimos do banco
+        logger.info(f"📜 {len(emprestimos)} empréstimos listados.")
+        return emprestimos
+
+    def remover_emprestimo(self, emprestimo_id: int) -> None:
+        """Remove um empréstimo usando o ID."""
+        if self.dao.remover_emprestimo(emprestimo_id):
+            print(f"✅ Empréstimo ID {emprestimo_id} removido com sucesso!")
+        else:
+            print(f"⚠️ Empréstimo ID {emprestimo_id} não encontrado.")
+
+    def buscar_por_id(self, emprestimo_id: int) -> Optional[Emprestimo]:
+            """
+            Busca um empréstimo pelo ID.
+
+            Args:
+                emprestimo_id: ID do empréstimo a ser buscado.
+
+            Returns:
+                Um objeto Emprestimo ou None se não encontrado.
+            """
+            emprestimo = self.dao.buscar_por_id(emprestimo_id)
+            if emprestimo:
+                return emprestimo
+            else:
+                print(f"⚠️ Empréstimo com ID {emprestimo_id} não encontrado.")
+                return None

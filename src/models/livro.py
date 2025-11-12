@@ -1,9 +1,33 @@
+#src/models/livro.py
+
+from typing import Any
+from datetime import datetime
+
 class Livro:
-    def __init__(self, id, titulo, autor, ano_publicacao, disponivel=True):
-        if not titulo or not autor:
-            raise ValueError("Título e autor são obrigatórios.")
-        if ano_publicacao <= 0:
+    """
+    Representa um livro no sistema da biblioteca.
+    """
+
+    def __init__(self, id: int, titulo: str, autor: str, ano_publicacao: int, disponivel: bool = True):
+
+        """
+        Inicializa um objeto Livro.
+
+        Args:
+            id (int): Identificador único do livro.
+            titulo (str): Título do livro.
+            autor (str): Autor do livro.
+            ano_publicacao (int): Ano de publicação.
+            disponivel (bool): Define se o livro está disponível.
+            **kwargs (Any): Ignora parâmetros extras vindos de arquivos.
+        """
+
+        if not titulo or not titulo.strip():
+            raise ValueError("O título não pode ser vazio.")
+        if ano_publicacao > datetime.now().year:
             raise ValueError("Ano de publicação inválido.")
+        if ano_publicacao <= 0:
+            raise ValueError("Ano não pode ser negativo.")
 
         self.id = id
         self.titulo = titulo
@@ -12,5 +36,4 @@ class Livro:
         self.disponivel = disponivel
 
     def __repr__(self):
-        status = "Disponível" if self.disponivel else "Emprestado"
-        return f"<Livro {self.id}: {self.titulo} ({status})>"
+        return f"<Livro {self.id}: {self.titulo} - {self.autor} ({self.ano_publicacao})>"

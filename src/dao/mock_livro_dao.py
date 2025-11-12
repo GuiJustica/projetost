@@ -1,3 +1,4 @@
+#src/dao/mock_livro_dao.py
 class MockLivroDAO:
     """Simula o comportamento do LivroDAO, sem usar banco real."""
     def __init__(self):

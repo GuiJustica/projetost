@@ -1,0 +1,111 @@
+2025-11-07 19:01:42,119 - INFO - 📘 Serviço de livros inicializado.
+2025-11-07 19:03:22,874 - INFO - 📘 Serviço de livros inicializado.
+2025-11-07 19:03:22,980 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-07 19:05:06,958 - INFO - 📘 Serviço de livros inicializado.
+2025-11-07 19:05:06,960 - ERROR - Erro ao criar livro: O livro '1984','George Orwell' já está cadastrado.
+2025-11-07 19:05:07,039 - INFO - ✅ Livro 'Dom Casmurro' cadastrado com sucesso.
+2025-11-07 19:43:16,734 - ERROR - Erro ao salvar livros: [Errno 2] No such file or directory: 'data/test_livros.json'
+2025-11-07 19:43:36,604 - INFO - 💾 2 livros salvos em 'src/data/test_livros.json'.
+2025-11-07 19:43:36,605 - ERROR - Erro ao carregar livros: Livro.__init__() missing 1 required positional argument: 'ano_publicacao'
+2025-11-07 19:45:28,650 - INFO - 💾 2 livros salvos em 'src/data/test_livros.json'.
+2025-11-07 19:45:28,651 - ERROR - Erro ao carregar livros: Livro.__init__() missing 1 required positional argument: 'ano_publicacao'
+2025-11-07 19:45:37,784 - INFO - 💾 2 livros salvos em 'src/data/test_livros.json'.
+2025-11-07 19:45:37,785 - ERROR - Erro ao carregar livros: Livro.__init__() missing 1 required positional argument: 'ano_publicacao'
+2025-11-07 19:46:58,833 - INFO - 💾 2 livros salvos em 'src/data/test_livros.json'.
+2025-11-07 19:46:58,834 - ERROR - Erro ao carregar livros: Livro.__init__() missing 1 required positional argument: 'ano_publicacao'
+2025-11-07 19:47:36,981 - INFO - 💾 2 livros salvos em 'src/data/test_livros.json'.
+2025-11-07 19:47:36,982 - ERROR - Erro ao carregar livros: Livro.__init__() missing 1 required positional argument: 'ano_publicacao'
+2025-11-07 19:47:50,248 - INFO - 💾 2 livros salvos em 'src/data/test_livros.json'.
+2025-11-07 19:47:50,249 - ERROR - Erro ao carregar livros: Livro.__init__() missing 1 required positional argument: 'ano_publicacao'
+2025-11-07 19:48:01,885 - INFO - 💾 2 livros salvos em 'src/data/test_livros.json'.
+2025-11-07 19:48:01,886 - ERROR - Erro ao carregar livros: Livro.__init__() missing 1 required positional argument: 'ano_publicacao'
+2025-11-07 19:48:43,376 - INFO - 💾 2 livros salvos em 'src/data/test_livros.json'.
+2025-11-07 19:48:43,378 - ERROR - Erro ao carregar livros: Livro.__init__() missing 1 required positional argument: 'ano_publicacao'
+2025-11-07 19:55:43,981 - INFO - 💾 2 livros salvos em 'src/data/test_livros.json'.
+2025-11-07 19:55:43,982 - ERROR - Erro ao carregar livros: Livro.__init__() missing 1 required positional argument: 'ano_publicacao'
+2025-11-07 19:56:33,197 - INFO - 💾 2 livros salvos em 'src/data/test_livros.json'.
+2025-11-07 19:56:33,198 - ERROR - Erro ao carregar livros: Livro.__init__() missing 1 required positional argument: 'id'
+2025-11-09 22:45:03,761 - INFO - 📘 Serviço de livros inicializado.
+2025-11-09 22:45:03,814 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 22:45:03,814 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 22:45:03,827 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:45:03,827 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:45:03,827 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:48:10,222 - INFO - 📘 Serviço de livros inicializado.
+2025-11-09 22:48:10,252 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 22:48:10,252 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 22:48:10,258 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:48:10,258 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:48:10,258 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:48:16,864 - INFO - 📘 Serviço de livros inicializado.
+2025-11-09 22:48:16,880 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 22:48:16,880 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 22:48:16,883 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:48:16,883 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:48:16,883 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:50:30,312 - INFO - 📘 Serviço de livros inicializado.
+2025-11-09 22:50:30,328 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 22:50:30,328 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 22:50:30,331 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:50:30,331 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:50:30,331 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:50:57,584 - INFO - 📘 Serviço de livros inicializado.
+2025-11-09 22:50:57,602 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 22:50:57,602 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 22:50:57,605 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:50:57,605 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:50:57,605 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:50:57,740 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-09 22:50:57,740 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-09 22:50:57,740 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-09 22:50:57,740 - INFO - ✅ Livro 'Admirável Mundo Novo' cadastrado com sucesso.
+2025-11-09 22:50:57,740 - INFO - ✅ Livro 'Admirável Mundo Novo' cadastrado com sucesso.
+2025-11-09 22:50:57,740 - INFO - ✅ Livro 'Admirável Mundo Novo' cadastrado com sucesso.
+2025-11-09 22:50:57,742 - INFO - ✅ Usuário 'Ana' cadastrado com sucesso.
+2025-11-09 22:50:57,742 - INFO - ✅ Usuário 'Ana' cadastrado com sucesso.
+2025-11-09 22:50:57,742 - INFO - ✅ Usuário 'Ana' cadastrado com sucesso.
+2025-11-09 22:50:57,743 - INFO - ✅ Usuário 'Carlos' cadastrado com sucesso.
+2025-11-09 22:50:57,743 - INFO - ✅ Usuário 'Carlos' cadastrado com sucesso.
+2025-11-09 22:50:57,743 - INFO - ✅ Usuário 'Carlos' cadastrado com sucesso.
+2025-11-09 22:50:57,745 - INFO - ✅ Livro 'Dom Casmurro' cadastrado com sucesso.
+2025-11-09 22:50:57,745 - INFO - ✅ Livro 'Dom Casmurro' cadastrado com sucesso.
+2025-11-09 22:50:57,745 - INFO - ✅ Livro 'Dom Casmurro' cadastrado com sucesso.
+2025-11-09 22:50:57,745 - INFO - ✅ Usuário 'Marina' cadastrado com sucesso.
+2025-11-09 22:50:57,745 - INFO - ✅ Usuário 'Marina' cadastrado com sucesso.
+2025-11-09 22:50:57,745 - INFO - ✅ Usuário 'Marina' cadastrado com sucesso.
+2025-11-09 22:50:57,746 - WARNING - ⚠️ Usuário não encontrado.
+2025-11-09 22:50:57,746 - WARNING - ⚠️ Usuário não encontrado.
+2025-11-09 22:50:57,746 - WARNING - ⚠️ Usuário não encontrado.
+2025-11-09 22:51:14,221 - INFO - 📘 Serviço de livros inicializado.
+2025-11-09 22:51:14,237 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 22:51:14,237 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 22:51:14,240 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:51:14,240 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:51:14,240 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 22:51:14,368 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-09 22:51:14,368 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-09 22:51:14,368 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-09 22:51:14,369 - INFO - ✅ Livro 'Admirável Mundo Novo' cadastrado com sucesso.
+2025-11-09 22:51:14,369 - INFO - ✅ Livro 'Admirável Mundo Novo' cadastrado com sucesso.
+2025-11-09 22:51:14,369 - INFO - ✅ Livro 'Admirável Mundo Novo' cadastrado com sucesso.
+2025-11-09 22:51:14,371 - INFO - ✅ Usuário 'Ana' cadastrado com sucesso.
+2025-11-09 22:51:14,371 - INFO - ✅ Usuário 'Ana' cadastrado com sucesso.
+2025-11-09 22:51:14,371 - INFO - ✅ Usuário 'Ana' cadastrado com sucesso.
+2025-11-09 22:51:14,371 - INFO - ✅ Usuário 'Carlos' cadastrado com sucesso.
+2025-11-09 22:51:14,371 - INFO - ✅ Usuário 'Carlos' cadastrado com sucesso.
+2025-11-09 22:51:14,371 - INFO - ✅ Usuário 'Carlos' cadastrado com sucesso.
+2025-11-09 22:51:14,373 - INFO - ✅ Livro 'Dom Casmurro' cadastrado com sucesso.
+2025-11-09 22:51:14,373 - INFO - ✅ Livro 'Dom Casmurro' cadastrado com sucesso.
+2025-11-09 22:51:14,373 - INFO - ✅ Livro 'Dom Casmurro' cadastrado com sucesso.
+2025-11-09 22:51:14,374 - INFO - ✅ Usuário 'Marina' cadastrado com sucesso.
+2025-11-09 22:51:14,374 - INFO - ✅ Usuário 'Marina' cadastrado com sucesso.
+2025-11-09 22:51:14,374 - INFO - ✅ Usuário 'Marina' cadastrado com sucesso.
+2025-11-09 22:51:14,374 - WARNING - ⚠️ Usuário não encontrado.
+2025-11-09 22:51:14,374 - WARNING - ⚠️ Usuário não encontrado.
+2025-11-09 22:51:14,374 - WARNING - ⚠️ Usuário não encontrado.
+2025-11-09 23:01:22,724 - INFO - 📘 Serviço de livros inicializado.
+2025-11-09 23:01:22,740 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 23:01:22,740 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-09 23:01:22,743 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 23:01:22,743 - INFO - 📖 Serviço de empréstimos inicializado.
+2025-11-09 23:01:22,743 - INFO - 📖 Serviço de empréstimos inicializado.

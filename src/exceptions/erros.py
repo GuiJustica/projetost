@@ -1,3 +1,4 @@
+#src/exceptions/erros.py
 class BibliotecaError(Exception):
     """Erro base do sistema de biblioteca."""
     def __init__(self, mensagem="Algo deu errado, tente novamente mais tarde."):
@@ -32,3 +33,9 @@ class LivroNaoEncontradoError(BibliotecaError):
 class LivroDuplicadoError(BibliotecaError):
     def __init__(self, titulo,autor):
         super().__init__(f"O livro '{titulo}','{autor}' já está cadastrado.")
+class LimiteEmprestimosError(BibliotecaError):
+    def __init__(self, titulo,autor):
+        super().__init__(f"O livro '{titulo}','{autor}' já está limitou.")
+class RegistroNaoEncontradoError(BibliotecaError):
+    def __init__(self, titulo,autor):
+        super().__init__(f"O livro '{titulo}','{autor}' já está registrou nao encontado.")

@@ -1,7 +1,7 @@
+#src/main.py
+
 from services.livro_service import LivroService
 from services.usuario_service import UsuarioService
-from services.autor_service import AutorService
-from services.categoria_service import CategoriaService
 from services.emprestimo_service import EmprestimoService
 
 def menu():
@@ -15,25 +15,15 @@ def menu():
     6. Listar Usuários
     7. Atualizar Usuário
     8. Remover Usuário
-    9. Cadastrar Autor
-    10. Listar Autores
-    11. Atualizar Autor
-    12. Remover Autor
-    13. Cadastrar Categoria
-    14. Listar Categorias
-    15. Atualizar Categoria
-    16. Remover Categoria
-    17. Registrar Empréstimo
-    18. Listar Empréstimos
-    19. Devolver Livro
+    9. Registrar Empréstimo
+    10. Listar Empréstimos
+    11. Devolver Livro
     0. Sair
     """)
 
 def main():
     livro_service = LivroService()
     usuario_service = UsuarioService()
-    autor_service = AutorService()
-    categoria_service = CategoriaService()
     emprestimo_service = EmprestimoService(usuario_service, livro_service)
 
     while True:
@@ -43,11 +33,16 @@ def main():
         match opcao:
             # LIVRO
             case "1":
-                livro_service.criar_livro(input("Título: "), input("Autor: "))
+                livro_service.criar_livro(input("Título: "), input("Autor: "), int(input("Ano: ")))
             case "2":
-                livro_service.listar_livros()
+                livros = livro_service.listar_livros()
+                if livros:
+                    for l in livros:
+                        print(f"[{l.id}] {l.titulo} — {l.autor} ({l.ano_publicacao})")
+                else:
+                    print("📚 Nenhum livro cadastrado.")
             case "3":
-                livro_service.atualizar_livro(int(input("ID: ")), input("Novo título: "), input("Novo autor: "))
+                livro_service.atualizar_livro(int(input("ID: ")), input("Novo título: "), input("Novo autor: "),int(input("Novo ano: ")))
             case "4":
                 livro_service.remover_livro(int(input("ID: ")))
 
@@ -55,41 +50,35 @@ def main():
             case "5":
                 usuario_service.criar_usuario(input("Nome: "))
             case "6":
-                usuario_service.listar_usuarios()
+                usuario = usuario_service.listar_usuarios()
+
+                if usuario:
+                    for u in usuario:
+                        print(f"[{u.id}] {u.nome}")
+                else:
+                    print("📚 Nenhum usuário cadastrado.")
             case "7":
                 usuario_service.atualizar_usuario(int(input("ID: ")), input("Novo nome: "))
             case "8":
                 usuario_service.remover_usuario(int(input("ID: ")))
 
-            # AUTOR
-            case "9":
-                autor_service.criar_autor(input("Nome: "))
-            case "10":
-                autor_service.listar_autores()
-            case "11":
-                autor_service.atualizar_autor(int(input("ID: ")), input("Novo nome: "))
-            case "12":
-                autor_service.remover_autor(int(input("ID: ")))
-
-            # CATEGORIA
-            case "13":
-                categoria_service.criar_categoria(input("Nome: "))
-            case "14":
-                categoria_service.listar_categorias()
-            case "15":
-                categoria_service.atualizar_categoria(int(input("ID: ")), input("Novo nome: "))
-            case "16":
-                categoria_service.remover_categoria(int(input("ID: ")))
 
             # EMPRÉSTIMO
-            case "17":
+            case "9":
                 emprestimo_service.criar_emprestimo(int(input("ID do Usuário: ")), int(input("ID do Livro: ")))
-            case "18":
-                emprestimo_service.listar_emprestimos()
-            case "19":
-                emprestimo_service.devolver_livro(int(input("ID do Empréstimo: ")))
-            case "20":
-                emprestimo_service.pagar_multa(int(input("ID do Usuário: ")), float(input("Valor a pagar: ")))
+            case "10":
+                emprestimo = emprestimo_service.listar_emprestimos()
+                if emprestimo:
+                    for e in emprestimo:
+                        print(f"[{e.id}] Usuário: {e.usuario.nome} — Livro: {e.livro.titulo} — Data: {e.data_emprestimo}")
+                else:
+                    print("📖 Nenhum empréstimo registrado.")
+            case "11":
+                emprestimo_id = int(input("ID do Empréstimo: ")) # busca o objeto pelo ID
+                if emprestimo_id:
+                    emprestimo_service.remover_emprestimo(emprestimo_id)
+                else:
+                    print("⚠️ Empréstimo não encontrado.")
 
             # SAIR
             case "0":
@@ -101,22 +90,7 @@ def main():
 
 
 
-from services.livro_service import LivroService
-from services.usuario_service import UsuarioService
-from exceptions.erros import BibliotecaError
+
 
 if __name__ == "__main__":
-    livros = LivroService()
-    usuarios = UsuarioService()
-
-    livros.criar_livro("Clean Code", "Robert C. Martin", 2008)
-    livros.criar_livro("Python Essencial", "Mark Lutz", 2013)
-
-    usuarios.criar_usuario("Guilherme Justiça")
-    usuarios.criar_usuario("Ana Souza")
-
-    print("\n📚 Livros no banco de dados:")
-    livros.listar_livros()
-
-    print("\n👥 Usuários no banco de dados:")
-    usuarios.listar_usuarios()
+    main()

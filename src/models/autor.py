@@ -1,3 +1,5 @@
+#src/models/autor.py
+
 class Autor:
     def __init__(self, id, nome):
         self.id = id

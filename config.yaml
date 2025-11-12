@@ -1,0 +1,10 @@
+logging:
+  level: INFO
+  file: logs/app.log
+
+app:
+  nome: Sistema de Biblioteca
+  versao: 1.0.0
+
+database:
+  url: sqlite:///E:/projetost/src/biblioteca.db

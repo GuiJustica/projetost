@@ -1,66 +1,89 @@
+from __future__ import annotations
+from typing import Optional, List
 from models.usuario import Usuario
-from validators.validador import Validador
 from dao.usuario_dao import UsuarioDAO
+from validators.validador import Validador
+from exceptions.erros import BibliotecaError
+from logger_config import configurar_logger
+from dao.database import criar_conexao
+
+
+
+logger = configurar_logger()
+logger.info("👤 Serviço de usuários inicializado.")
+
 
 class UsuarioService:
-    def __init__(self):
-        self.dao = UsuarioDAO()
+    """Serviço responsável pelas operações de CRUD e controle de usuários."""
 
-    def criar_usuario(self, nome, multa=0):
-        # Lista todos os usuários já cadastrados
-        usuarios_existentes = self.dao.listar()
-        Validador.validar_usuario(nome, multa)
+    def __init__(self, dao: Optional[UsuarioDAO] = None) -> None:
+        """
+        Inicializa o serviço de usuários.
 
-        # Cria o novo usuário e salva no banco
-        usuario = Usuario(nome, multa)
-        self.dao.criar(usuario)
-        print(f"✅ Usuário '{nome}' cadastrado com sucesso!")
+        Args:
+            dao: Objeto DAO responsável pela persistência (padrão: UsuarioDAO real).
+        """
+        conn = criar_conexao()
+        self.dao: UsuarioDAO = dao or UsuarioDAO(conn)
 
-    def listar_usuarios(self):
-        usuarios = self.dao.listar()
-        if usuarios:
-            print("\n👥 Usuários cadastrados:")
-            for nome, multa in usuarios:
-                print(f"- {nome} | Multa: R${multa:.2f}")
-        else:
-            print("⚠️ Nenhum usuário cadastrado.")
+    def criar_usuario(self, nome: str) -> None:
+        """
+        Cadastra um novo usuário após validação.
 
-    def atualizar_usuario(self, usuario_id, novo_nome):
+        Args:
+            nome: Nome do usuário.
+         """
+        try:
+            usuarios_existentes = self.dao.listar()
+            Validador.validar_usuario(nome,  [
+                Usuario(r[1], r[0]) for r in usuarios_existentes
+            ])
+
+            novo_id = len(usuarios_existentes) + 1
+            usuario = Usuario(nome, novo_id)
+            self.dao.criar(usuario)
+
+            logger.info(f"✅ Usuário '{nome}' cadastrado com sucesso.")
+            print(f"✅ Usuário '{nome}' cadastrado com sucesso!")
+
+        except BibliotecaError as e:
+            logger.error(f"Erro ao criar usuário: {e}")
+            print(f"❌ Erro: {e}")
+
+    def listar_usuarios(self) -> List[Usuario]:
+        """
+        Retorna a lista de todos os usuários cadastrados.
+
+        Returns:
+            Uma lista de objetos Usuario.
+        """
+        return [Usuario(r[1], r[0]) for r in self.dao.listar()]
+
+    def atualizar_usuario(self, usuario_id: int, novo_nome: str) -> None:
+        """
+        Atualiza os dados de um usuário existente.
+
+        Args:
+            usuario_id: ID do usuário.
+            novo_nome: Novo nome.
+        """
         if self.dao.atualizar(usuario_id, novo_nome):
+            logger.info(f"✏️ Usuário {usuario_id} atualizado com sucesso.")
             print(f"✏️ Usuário {usuario_id} atualizado com sucesso!")
         else:
+            logger.warning(f"Tentativa de atualizar usuário inexistente: ID {usuario_id}")
             print("⚠️ Usuário não encontrado.")
 
-    def remover_usuario(self, usuario_id):
+    def remover_usuario(self, usuario_id: int) -> None:
+        """
+        Remove um usuário do sistema.
+
+        Args:
+            usuario_id: ID do usuário a ser removido.
+        """
         if self.dao.remover(usuario_id):
+            logger.info(f"🗑️ Usuário {usuario_id} removido com sucesso.")
             print(f"🗑️ Usuário {usuario_id} removido com sucesso!")
         else:
+            logger.warning(f"Tentativa de remover usuário inexistente: ID {usuario_id}")
             print("⚠️ Usuário não encontrado.")
-
-    def consultar_usuarios(self, filtro_por=None, valor=None, ordenar_por=None, ordem_crescente=True):
-        usuarios = self.dao.listar()
-
-        # 🔍 Filtro
-        if filtro_por and valor:
-            if filtro_por == "nome":
-                usuarios = [u for u in usuarios if valor.lower() in u[0].lower()]
-            elif filtro_por == "multa":
-                try:
-                    valor = float(valor)
-                    usuarios = [u for u in usuarios if float(u[1]) == valor]
-                except ValueError:
-                    print("⚠️ Valor inválido para filtro de multa.")
-
-        # ↕️ Ordenação
-        if ordenar_por == "nome":
-            usuarios.sort(key=lambda u: u[0], reverse=not ordem_crescente)
-        elif ordenar_por == "multa":
-            usuarios.sort(key=lambda u: u[1], reverse=not ordem_crescente)
-
-        # 🧾 Resultado
-        if usuarios:
-            print("\n👥 Resultados da consulta:")
-            for nome, multa in usuarios:
-                print(f"- {nome} | Multa: R${multa:.2f}")
-        else:
-            print("❌ Nenhum usuário encontrado com os critérios informados.")
