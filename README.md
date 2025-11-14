@@ -69,7 +69,9 @@ Um sistema modular para gerenciamento de livros, autores, usuários e empréstim
 
 ## 🧪 Testes
 Para rodar:
-(venv) PS E:\projetost\src> pytest -v ../tests/unit/test_unit_geral.py
+(venv) ../../../src> pytest -v ../tests/unit/test_unit_geral.py
+
+
 
 
 ## 📦 Instalação
@@ -79,4 +81,6 @@ git clone https://github.com/GuiJustica/projetost
 pip install -r requirements.txt
 
 python main.py ou python main_ui.py
+
+Um erro pode occorer por conta do src. nas pastas de service e dao, caso ocorra, retire o src. dos imports
 
