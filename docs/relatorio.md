@@ -35,17 +35,18 @@ Validam:
 - Fluxo completo de empréstimo
 - Persistência em JSON
 - Múltiplas interações entre módulos
-- Regras combinadas de disponibilidade e bloqueio
+- Regras de disponibilidade
 
 ---
 
 ## 4. Resultados
-- Todos os testes passaram com sucesso
+- Maioria dos testes passaram com sucesso
+- Testes falharam por passagem errada de argumento (corrigir posteriormente)
 - A arquitetura ficou consistente e expansível
-- O sistema está pronto para evoluções futuras (API REST, banco SQL, UI)
+- Mais testes poderiam ser implementados para um sistema mais completo
+
 
 ---
 
 ## 5. Conclusão
-O projeto demonstrou a importância de boas práticas de engenharia de software, como modularização, testes automatizados e validação rigorosa. A aplicação está confiável, extensível e adequada como base para sistemas maiores, além de servir como um estudo sólido de qualidade de software.
-
+O projeto demonstrou práticas de engenharia de software, como modularização, testes automatizados e validação. A aplicação adequada como base para um sistema funcional.
