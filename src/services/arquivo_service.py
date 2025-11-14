@@ -1,7 +1,7 @@
 import os
 import json
 from src.models.livro import Livro
-
+from src.models.usuario import Usuario
 class ArquivoService:
     @staticmethod
     def salvar_livros_json(caminho: str, livros: list):
@@ -34,3 +34,15 @@ class ArquivoService:
         except Exception as e:
             print(f"Erro ao carregar livros: {e}")
             return []
+    @staticmethod
+    def salvar_usuarios_json(caminho: str, usuarios: list):
+        with open(caminho, "w", encoding="utf-8") as arquivo:
+            json.dump([u.__dict__ for u in usuarios], arquivo, ensure_ascii=False, indent=4)
+
+    @staticmethod
+    def carregar_usuarios_json(caminho: str):
+        if not os.path.exists(caminho):
+            return []
+        with open(caminho, "r", encoding="utf-8") as arquivo:
+            dados = json.load(arquivo)
+            return [Usuario(d.get("nome")) for d in dados]

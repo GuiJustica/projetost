@@ -2,7 +2,8 @@ import pytest
 from src.controllers.biblioteca_controller import BibliotecaController
 from src.models.usuario import Usuario
 from src.models.livro import Livro
-from src.models.emprestimo import Emprestimo
+from src.models.autor import Autor
+from src.services.arquivo_service import ArquivoService
 
 
 @pytest.fixture
@@ -10,129 +11,130 @@ def controller():
     return BibliotecaController()
 
 
-# 1️⃣ Fluxo completo de empréstimo e devolução
+# 1️⃣ Fluxo completo: Autor → Livro → Empréstimo → Devolução
 def test_fluxo_completo_integrado(controller):
-    usuario = Usuario("João")
-    livro = Livro("Dom Casmurro", "Machado de Assis", 1899)
-    controller.usuarios_repo.adicionar(usuario)
-    controller.livros_repo.adicionar(livro)
+    autor = controller.autor_repo.adicionar(Autor("George Orwell", "Escritor britânico"))
+    livro = controller.livros_repo.adicionar(Livro(1, "1984", autor.nome, 1949))
+    usuario = controller.usuarios_repo.adicionar(Usuario("Marcos"))
 
     emprestimo = controller.emprestar_livro(usuario.id, livro.id)
-    assert emprestimo.livro.disponivel is False
+
+    assert not livro.disponivel
+    assert emprestimo.livro.titulo == "1984"
+    assert emprestimo.usuario.nome == "Marcos"
 
     controller.devolver_livro(emprestimo.id)
-    assert livro.disponivel is True
+    assert livro.disponivel
 
 
-# 2️⃣ Usuário bloqueado tentando pegar livro
-def test_emprestimo_usuario_bloqueado_integrado(controller):
-    usuario = Usuario("Maria")
-    usuario.bloquear()
-    livro = Livro("O Hobbit", "Tolkien", 1937)
-    controller.usuarios_repo.adicionar(usuario)
-    controller.livros_repo.adicionar(livro)
+# 2️⃣ Tentar empréstimo de livro indisponível
+def test_livro_indisponivel_integrado(controller):
+    u1 = controller.usuarios_repo.adicionar(Usuario("Ana"))
+    u2 = controller.usuarios_repo.adicionar(Usuario("Paulo"))
+    autor = controller.autor_repo.adicionar(Autor("Orwell", "Autor inglês"))
+    livro = controller.livros_repo.adicionar(Livro(1, "A Revolução dos Bichos", autor.nome, 1945))
 
-    with pytest.raises(ValueError, match="Usuário bloqueado"):
+    controller.emprestar_livro(u1.id, livro.id)
+
+    with pytest.raises(ValueError, match="indisponível"):
+        controller.emprestar_livro(u2.id, livro.id)
+
+
+# 3️⃣ Usuário bloqueado não pode emprestar
+def test_usuario_bloqueado_integrado(controller):
+    usuario = controller.usuarios_repo.adicionar(Usuario("Danilo"))
+    usuario.bloqueado = True
+
+    autor = controller.autor_repo.adicionar(Autor("Cervantes", "Espanhol"))
+    livro = controller.livros_repo.adicionar(Livro(1, "Dom Quixote", autor.nome, 1605))
+
+    with pytest.raises(ValueError, match="bloqueado"):
         controller.emprestar_livro(usuario.id, livro.id)
 
 
-# 3️⃣ Livro indisponível em novo empréstimo
-def test_emprestimo_livro_indisponivel_integrado(controller):
-    usuario1 = Usuario("Ana")
-    usuario2 = Usuario("Carlos")
-    livro = Livro("1984", "George Orwell", 1949)
+# 4️⃣ Atualização e recuperação de dados entre módulos
+def test_atualizar_e_buscar_usuario_integrado(controller):
+    usuario = controller.usuarios_repo.adicionar(Usuario("Beatriz"))
+    novo_usuario = Usuario("Beatriz Oliveira", id=usuario.id)
 
-    controller.usuarios_repo.adicionar(usuario1)
-    controller.usuarios_repo.adicionar(usuario2)
-    controller.livros_repo.adicionar(livro)
+    controller.usuarios_repo.atualizar(usuario.id, novo_usuario)
+    recuperado = controller.usuarios_repo.buscar_por_id(usuario.id)
 
-    controller.emprestar_livro(usuario1.id, livro.id)
-
-    with pytest.raises(ValueError, match="Livro indisponível"):
-        controller.emprestar_livro(usuario2.id, livro.id)
+    assert recuperado.nome == "Beatriz Oliveira"
 
 
-# 4️⃣ Integração com serviço de arquivo (salvar/carregar)
-def test_salvar_e_carregar_integrado(controller, tmp_path):
-    arquivo = tmp_path / "livros.json"
-    livros = [Livro("A Revolução dos Bichos", "George Orwell", 1945)]
-    controller.arquivo_service.salvar_livros_json(str(arquivo),livros)
-    carregados = controller.arquivo_service.carregar_livros_json(arquivo)
-
-    assert len(carregados) == 1
-    assert carregados[0].titulo == "A Revolução dos Bichos"
-
-
-# 5️⃣ Atualização de dados entre repositórios
-def test_atualizar_usuario_integrado(controller):
-    usuario = controller.usuarios_repo.adicionar(Usuario("Lucas"))
-    usuario.nome = "Lucas Silva"
-    usuario_atualizado = Usuario(nome="Lucas Silva", id=usuario.id)
-    controller.usuarios_repo.atualizar(usuario.id, usuario_atualizado)
-    assert controller.usuarios_repo.buscar_por_id(usuario.id).nome == "Lucas Silva"
-
-
-# 6️⃣ Remoção e re-adição de item
-def test_remover_e_recriar_livro_integrado(controller):
-    livro = controller.livros_repo.adicionar(Livro("O Pequeno Príncipe", "Saint-Exupéry", 1943))
-    controller.livros_repo.remover(livro.id)
-    assert controller.livros_repo.buscar_por_id(livro.id) is None
-
-    novo = controller.livros_repo.adicionar(Livro("O Pequeno Príncipe", "Saint-Exupéry", 1943))
-    assert novo.id != livro.id
-
-
-# 7️⃣ Empréstimos múltiplos e independentes
+# 5️⃣ Múltiplos empréstimos integrados
 def test_multiplos_emprestimos_integrado(controller):
-    u1 = controller.usuarios_repo.adicionar(Usuario("João"))
-    u2 = controller.usuarios_repo.adicionar(Usuario("Pedro"))
-    l1 = controller.livros_repo.adicionar(Livro("Livro A", "Autor A", 2000))
-    l2 = controller.livros_repo.adicionar(Livro("Livro B", "Autor B", 2001))
+    autor = controller.autor_repo.adicionar(Autor("Martin Fowler", "Arquiteto de software"))
+    l1 = controller.livros_repo.adicionar(Livro(1, "Refactoring", autor.nome, 1999))
+    l2 = controller.livros_repo.adicionar(Livro(2, "Patterns", autor.nome, 2004))
+
+    u1 = controller.usuarios_repo.adicionar(Usuario("Lucas"))
+    u2 = controller.usuarios_repo.adicionar(Usuario("Clara"))
 
     e1 = controller.emprestar_livro(u1.id, l1.id)
     e2 = controller.emprestar_livro(u2.id, l2.id)
 
     assert not l1.disponivel
     assert not l2.disponivel
-    assert e1.usuario.nome == "João"
-    assert e2.usuario.nome == "Pedro"
+    assert e1.usuario.nome == "Lucas"
+    assert e2.usuario.nome == "Clara"
 
 
-# 8️⃣ Tentativa de devolver empréstimo inexistente
-def test_devolver_inexistente_integrado(controller):
+# 6️⃣ Tentativa de devolver empréstimo inexistente
+def test_devolver_emprestimo_inexistente(controller):
     with pytest.raises(ValueError, match="não encontrado"):
-        controller.devolver_livro(999)
+        controller.devolver_livro(9999)
 
 
-# 9️⃣ Teste de persistência simulada em repositórios
-def test_persistencia_simulada_integrado(controller):
-    usuario = controller.usuarios_repo.adicionar(Usuario("Bruno"))
-    livro = controller.livros_repo.adicionar(Livro("Clean Code", "Robert Martin", 2008))
+# 7️⃣ Remover livro e recriar com mesmo título
+def test_remover_e_recriar_livro_integrado(controller):
+    autor = controller.autor_repo.adicionar(Autor("Tolkien", "Autor de fantasia"))
 
-    # Primeiro empréstimo
-    emprestimo = controller.emprestar_livro(usuario.id, livro.id)
-    assert emprestimo in controller.emprestimos_repo.listar()
+    livro = controller.livros_repo.adicionar(Livro(1, "O Hobbit", autor.nome, 1937))
+    controller.livros_repo.remover(livro.id)
 
-    # Devolver o livro para que ele fique disponível
-    controller.devolver_livro(emprestimo.id)
-    assert livro.disponivel  # agora o livro está disponível novamente
+    assert controller.livros_repo.buscar_por_id(livro.id) is None
 
-    # Segundo empréstimo (após devolver)
-    emprestimo2 = controller.emprestar_livro(usuario.id, livro.id)
-    assert emprestimo2 in controller.emprestimos_repo.listar()
-    assert not livro.disponivel
+    novo = controller.livros_repo.adicionar(Livro(2, "O Hobbit", autor.nome, 1937))
+    assert novo.id != livro.id
 
 
-# 🔟 Integração com exceções esperadas e rollback lógico
-def test_integracao_excecao_e_recuperacao(controller):
+# 8️⃣ Validação integrada (dados inválidos)
+def test_validacao_integrada(controller):
+    with pytest.raises(ValueError):
+        controller.livros_repo.adicionar(Livro(1, "", "Autor", 2000))
+
+    with pytest.raises(ValueError):
+        controller.usuarios_repo.adicionar(Usuario(""))
+
+
+# 9️⃣ Rollback após exceção no fluxo
+def test_integracao_rollback(controller):
     usuario = controller.usuarios_repo.adicionar(Usuario("Lia"))
-    livro = controller.livros_repo.adicionar(Livro("O Código Da Vinci", "Dan Brown", 2003))
+    autor = controller.autor_repo.adicionar(Autor("Dan Brown", "Autor"))
+    livro = controller.livros_repo.adicionar(Livro(1, "Inferno", autor.nome, 2013))
 
     controller.emprestar_livro(usuario.id, livro.id)
-    assert not livro.disponivel
 
     with pytest.raises(ValueError):
         controller.emprestar_livro(usuario.id, livro.id)
 
-    # O estado do livro não deve ser alterado por causa da exceção
-    assert not livro.disponivel
+    assert not livro.disponivel  # estado permanece consistente
+
+
+# 🔟 Integração com ArquivoService (persistência JSON)
+def test_persistencia_completa_integrada(tmp_path):
+    caminho = tmp_path / "acervo.json"
+
+    livros = [
+        Livro(1, "Clean Code", "Robert C. Martin", 2008),
+        Livro(2, "Refactoring", "Martin Fowler", 1999),
+    ]
+
+    ArquivoService.salvar_livros_json(str(caminho), livros)
+    carregados = ArquivoService.carregar_livros_json(str(caminho))
+
+    assert len(carregados) == 2
+    assert carregados[0].titulo == "Clean Code"
+    assert carregados[1].autor == "Martin Fowler"

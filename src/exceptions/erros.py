@@ -31,8 +31,12 @@ class LivroNaoEncontradoError(BibliotecaError):
 
 
 class LivroDuplicadoError(BibliotecaError):
-    def __init__(self, titulo,autor):
-        super().__init__(f"O livro '{titulo}','{autor}' já está cadastrado.")
+    def __init__(self, titulo, autor=None):
+        if autor:
+            super().__init__(f"O livro '{titulo}', '{autor}' já está cadastrado.")
+        else:
+            super().__init__(f"O livro '{titulo}' já está cadastrado.")
+
 class LimiteEmprestimosError(BibliotecaError):
     def __init__(self, titulo,autor):
         super().__init__(f"O livro '{titulo}','{autor}' já está limitou.")

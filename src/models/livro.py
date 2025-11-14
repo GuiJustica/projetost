@@ -35,5 +35,6 @@ class Livro:
         self.ano_publicacao = ano_publicacao
         self.disponivel = disponivel
 
+
     def __repr__(self):
         return f"<Livro {self.id}: {self.titulo} - {self.autor} ({self.ano_publicacao})>"

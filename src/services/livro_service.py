@@ -3,7 +3,7 @@ from typing import Optional, List
 from models.livro import Livro
 from dao.livro_dao import LivroDAO
 from validators.validador import Validador
-from exceptions.erros import BibliotecaError
+from exceptions.erros import BibliotecaError,LivroDuplicadoError
 from logger_config import configurar_logger
 from dao.database import criar_conexao
 
@@ -49,6 +49,10 @@ class LivroService:
 
             # Valida o livro (ano_publicacao pode permanecer int)
             livros_existentes = self.dao.listar()
+            for l in livros_existentes:
+                if l[1].strip().lower() == titulo.lower() and l[2].strip().lower() == autor.lower():
+                    raise LivroDuplicadoError(f"O livro '{titulo}' de {autor} já está cadastrado.")
+
             Validador.validar_livro(
                 titulo, autor, ano_publicacao,
                 [Livro(r[0], r[1], r[2], int(r[3])) for r in livros_existentes]
@@ -60,6 +64,7 @@ class LivroService:
 
             logger.info(f"✅ Livro '{titulo}' cadastrado com sucesso.")
             print(f"✅ Livro '{titulo}' cadastrado com sucesso!")
+            return livro
 
         except BibliotecaError as e:
             logger.error(f"Erro ao criar livro: {e}")
@@ -76,7 +81,7 @@ class LivroService:
         return [Livro(r[0], r[1], r[2], r[3]) for r in livros]
 
     def atualizar_livro(self, livro_id: int, novo_titulo: str,
-                        novo_autor: str, novo_ano: int) -> None:
+                        novo_autor: str, novo_ano: int, disponivel: bool = True) -> None:
         """
         Atualiza os dados de um livro existente.
 
@@ -85,8 +90,9 @@ class LivroService:
             novo_titulo: Novo título.
             novo_autor: Novo autor.
             novo_ano: Novo ano de publicação.
+            disponivel: Novo status de disponibilidade do livro.
         """
-        if self.dao.atualizar(livro_id, novo_titulo, novo_autor, novo_ano):
+        if self.dao.atualizar(livro_id, novo_titulo, novo_autor, novo_ano,disponivel):
             logger.info(f"✏️ Livro {livro_id} atualizado com sucesso.")
             print(f"✏️ Livro {livro_id} atualizado com sucesso!")
         else:
@@ -156,3 +162,7 @@ class LivroService:
         else:
             logger.info("Nenhum livro encontrado na consulta.")
             print("❌ Nenhum livro encontrado com os critérios informados.")
+
+
+    def buscar_por_id(self, livro_id: int) -> Livro | None:
+        return self.dao.buscar_por_id(livro_id)

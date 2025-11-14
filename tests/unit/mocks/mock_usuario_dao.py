@@ -3,29 +3,37 @@
 
 from src.models.usuario import Usuario
 
-class MockUsuarioRepository:
+class MockUsuarioDAO:
     def __init__(self):
         self.usuarios = []
-        self.next_id = 1
+        self._next_id = 1
 
-    def criar(self, usuario):
-        usuario.id = self.next_id
-        self.next_id += 1
-        self.usuarios.append((usuario.id, usuario.nome))
+    def criar(self, usuario: Usuario):
+        if usuario.id is None:
+            usuario.id = self._next_id
+            self._next_id += 1
+        self.usuarios.append(usuario)
+        return usuario
 
     def listar(self):
-        return self.usuarios
+        return self.usuarios  # retorna objetos Usuario
+
+    def buscar_por_id(self, usuario_id):
+        for usuario in self.usuarios:
+            if usuario.id == usuario_id:
+                return usuario
+        return None
 
     def atualizar(self, usuario_id, novo_nome):
-        for i, (uid, nome) in enumerate(self.usuarios):
-            if uid == usuario_id:
-                self.usuarios[i] = (uid, novo_nome)
-                return True
+        usuario = self.buscar_por_id(usuario_id)
+        if usuario:
+            usuario.nome = novo_nome
+            return True
         return False
 
     def remover(self, usuario_id):
-        for i, (uid, _, _) in enumerate(self.usuarios):
-            if uid == usuario_id:
-                del self.usuarios[i]
-                return True
+        usuario = self.buscar_por_id(usuario_id)
+        if usuario:
+            self.usuarios.remove(usuario)
+            return True
         return False

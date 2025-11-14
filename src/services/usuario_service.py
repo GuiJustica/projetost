@@ -6,7 +6,8 @@ from validators.validador import Validador
 from exceptions.erros import BibliotecaError
 from logger_config import configurar_logger
 from dao.database import criar_conexao
-
+from validators.validador import Validador
+from exceptions.erros import EntradaInvalidaError
 
 
 logger = configurar_logger()
@@ -24,6 +25,7 @@ class UsuarioService:
             dao: Objeto DAO responsável pela persistência (padrão: UsuarioDAO real).
         """
         conn = criar_conexao()
+
         self.dao: UsuarioDAO = dao or UsuarioDAO(conn)
 
     def criar_usuario(self, nome: str) -> None:
@@ -34,6 +36,7 @@ class UsuarioService:
             nome: Nome do usuário.
          """
         try:
+
             usuarios_existentes = self.dao.listar()
             Validador.validar_usuario(nome,  [
                 Usuario(r[1], r[0]) for r in usuarios_existentes
@@ -45,10 +48,15 @@ class UsuarioService:
 
             logger.info(f"✅ Usuário '{nome}' cadastrado com sucesso.")
             print(f"✅ Usuário '{nome}' cadastrado com sucesso!")
+            return usuario
 
         except BibliotecaError as e:
             logger.error(f"Erro ao criar usuário: {e}")
             print(f"❌ Erro: {e}")
+            return None
+
+
+
 
     def listar_usuarios(self) -> List[Usuario]:
         """

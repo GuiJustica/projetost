@@ -46,14 +46,14 @@ class LivroDAO:
         conn.close()
         return rows
 
-    def atualizar(self, livro_id, novo_titulo, novo_autor, novo_ano):
+    def atualizar(self, livro_id, novo_titulo, novo_autor, novo_ano, disponivel: bool) -> bool:
         conn = sqlite3.connect(DB_PATH)
         cursor = conn.cursor()
         cursor.execute("""
             UPDATE livros
-            SET titulo = ?, autor = ?, ano_publicacao = ?
+            SET titulo = ?, autor = ?, ano_publicacao = ?, disponivel = ?
             WHERE id = ?
-        """, (novo_titulo, novo_autor, novo_ano, livro_id))
+        """, (novo_titulo, novo_autor, novo_ano, int(disponivel), livro_id))  # Convertendo bool para int
         conn.commit()
         atualizado = cursor.rowcount > 0
         conn.close()

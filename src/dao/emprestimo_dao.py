@@ -7,12 +7,15 @@ from datetime import datetime
 from dao.usuario_dao import UsuarioDAO
 from dao.livro_dao import LivroDAO
 from typing import Optional
+
 from logger_config import configurar_logger
 logger = configurar_logger()
 class EmprestimoDAO:
 
     def __init__(self):
         self.conn = criar_conexao()  # Conexão com o banco de dados
+        self.livro_dao = LivroDAO(self.conn)
+        self.usuario_dao = UsuarioDAO(self.conn)
         self._criar_tabela()
 
     def _criar_tabela(self):
@@ -81,23 +84,31 @@ class EmprestimoDAO:
 
     def buscar_por_id(self, emprestimo_id: int) -> Optional[Emprestimo]:
         """Busca um empréstimo pelo ID."""
-        conn = sqlite3.connect(DB_PATH)
-        cursor = conn.cursor()
+        cursor = self.conn.cursor()
         cursor.execute("""
             SELECT id, livro_id, usuario_id, data_emprestimo
-                FROM emprestimos
+            FROM emprestimos
             WHERE id = ?
         """, (emprestimo_id,))
         row = cursor.fetchone()
-        conn.close()
 
         if row:
-            return Emprestimo(
-                id=row[0],
-                livro_id=row[1],
-                usuario_id=row[2],
-                data_emprestimo=row[3]
-            )
+            id, livro_id, usuario_id, data_emprestimo = row
+
+            # Buscar o livro e o usuário pelos seus IDs
+            livro = self.livro_dao.buscar_por_id(livro_id)
+            usuario = self.usuario_dao.buscar_por_id(usuario_id)
+
+            if livro and usuario:
+                return Emprestimo(
+                    id=id,
+                    livro=livro,
+                    usuario=usuario,
+                    data_emprestimo=datetime.fromisoformat(data_emprestimo)
+                )
+            else:
+                logger.warning(f"⚠️ Livro ou Usuário não encontrado para o Empréstimo ID {emprestimo_id}.")
+                return None
         return None
 
     def remover_emprestimo(self, emprestimo_id: int) -> bool:

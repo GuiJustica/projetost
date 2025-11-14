@@ -10,6 +10,8 @@ import logging
 from services.livro_service import LivroService
 from services.usuario_service import UsuarioService
 from services.emprestimo_service import EmprestimoService
+from services.autor_service import AutorService
+
 from dao.database import criar_conexao
 from dao.livro_dao import LivroDAO
 
@@ -36,7 +38,7 @@ class App(ctk.CTk):
         self.geometry("900x600")
         ctk.set_appearance_mode("light")
         ctk.set_default_color_theme("pink.json")
-
+        self.autor_service = AutorService()
         self.livro_service = LivroService()
         self.usuario_service = UsuarioService()
         self.emprestimo_service = EmprestimoService(
@@ -79,6 +81,9 @@ class App(ctk.CTk):
             self.sidebar, text="📘 Empréstimos", width=140, command=self.mostrar_menu_emprestimos
         )
         self.btn_cad_emprestimos.pack(pady=5)
+        self.btn_cad_autores = ctk.CTkButton(
+        self.sidebar, text="✍️ Autores", width=140, command=self.mostrar_menu_autores)
+        self.btn_cad_autores.pack(pady=5)
 
 
         ctk.CTkButton(
@@ -502,6 +507,85 @@ class App(ctk.CTk):
                     "end", f"[{getattr(e,'id','')}] Usuário: {usuario_nome} — Livro: {livro_titulo}\n"
                 )
         self.lista_emprestimos_box.configure(state="disabled")
+
+
+
+    # ---------------- Autores ----------------
+    def mostrar_menu_autores(self):
+            self.limpar_main()
+            ctk.CTkLabel(
+                self.main_frame,
+                text="✍️ Gerenciar Autores",
+                font=ctk.CTkFont(size=20, weight="bold"),
+            ).pack(pady=20)
+
+            nome_entry = self._entrada_com_label("Nome:", self.main_frame)
+            descricao_entry = self._entrada_com_label("Descrição:", self.main_frame)
+
+            lista_frame = ctk.CTkFrame(self.main_frame, fg_color="white")
+            lista_frame.pack(fill="both", expand=True, pady=(10, 0))
+
+            def atualizar_lista_autores():
+                for widget in lista_frame.winfo_children():
+                    widget.destroy()
+
+                autores = self.autor_service.listar_autor()
+                self.autor_vars_check = {}
+                for a in autores:
+                    var = ctk.BooleanVar()
+                    cb = ctk.CTkCheckBox(lista_frame, text=f"[{a.id}] {a.nome} — {a.descricao}", variable=var)
+                    cb.pack(anchor="w", padx=5, pady=2)
+                    self.autor_vars_check[a.id] = (var, a)
+
+            atualizar_lista_autores()
+
+            # -------- Botões de ação --------
+            def cadastrar_autor():
+                nome = safe_strip(nome_entry.get())
+                descricao = safe_strip(descricao_entry.get())
+
+                if not nome or not descricao:
+                    messagebox.showerror("Erro", "Preencha todos os campos.")
+                    return
+
+                try:
+                    self.autor_service.criar_autor(nome, descricao)
+                    messagebox.showinfo("Sucesso", f"Autor '{nome}' cadastrado!")
+                    nome_entry.delete(0, "end")
+                    descricao_entry.delete(0, "end")
+                    atualizar_lista_autores()
+                except Exception as e:
+                    messagebox.showerror("Erro", str(e))
+
+            def remover_autores_selecionados():
+                removidos = 0
+                for a_id, (var, autor) in self.autor_vars_check.items():
+                    if var.get():
+                        self.autor_service.remover_autor(autor.id)
+                        removidos += 1
+                if removidos:
+                    messagebox.showinfo("Sucesso", f"{removidos} autor(es) removido(s)!")
+                else:
+                    messagebox.showwarning("Aviso", "Nenhum autor selecionado.")
+                atualizar_lista_autores()
+
+            def atualizar_autor_selecionado():
+                for a_id, (var, autor) in self.autor_vars_check.items():
+                    if var.get():
+                        from tkinter.simpledialog import askstring
+                        nova_descricao = askstring("Atualizar Autor", "Descrição:", initialvalue=autor.descricao)
+                        if nova_descricao:
+                            self.autor_service.atualizar_autor(autor.id, nova_descricao)
+                            messagebox.showinfo("Sucesso", f"Autor [{autor.id}] atualizado!")
+                atualizar_lista_autores()
+
+            # -------- Botões de interface --------
+            ctk.CTkButton(self.main_frame, text="Cadastrar Autor", command=cadastrar_autor).pack(pady=5)
+            ctk.CTkButton(self.main_frame, text="Remover Autores Selecionados", command=remover_autores_selecionados).pack(pady=5)
+            ctk.CTkButton(self.main_frame, text="Atualizar Autor Selecionado", command=atualizar_autor_selecionado).pack(pady=5)
+
+
+
 
     # ---------------- COMPONENTE AUXILIAR ----------------
     def _entrada_com_label(self, texto, parent):

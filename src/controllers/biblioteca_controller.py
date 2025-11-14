@@ -2,6 +2,7 @@ from src.models.livro import Livro
 from src.models.usuario import Usuario
 from src.models.emprestimo import Emprestimo
 from src.repositories.livro_repository import LivroRepository
+from src.repositories.autor_repository import AutorRepository
 from src.repositories.usuario_repository import UsuarioRepository
 from src.repositories.emprestimo_repository import EmprestimoRepository
 from src.services.arquivo_service import ArquivoService
@@ -10,6 +11,7 @@ from datetime import datetime
 class BibliotecaController:
     def __init__(self):
         self.livros_repo = LivroRepository()
+        self.autor_repo = AutorRepository()
         self.usuarios_repo = UsuarioRepository()
         self.emprestimos_repo = EmprestimoRepository()
         self.arquivo_service = ArquivoService()
@@ -34,8 +36,6 @@ class BibliotecaController:
             raise ValueError("Usuário não encontrado.")
         if not livro:
             raise ValueError("Livro não encontrado.")
-        if usuario.bloqueado:
-            raise ValueError("Usuário bloqueado não pode pegar livros emprestados.")
         if not livro.disponivel:
             raise ValueError("Livro indisponível.")
 
@@ -59,5 +59,4 @@ class BibliotecaController:
 
     def listar_livros(self):
         return self.livros_repo.listar()
-    def bloquear(self):
-        self.bloqueado = True
+

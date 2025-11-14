@@ -6,6 +6,8 @@ from services.livro_service import LivroService
 from logger_config import configurar_logger
 from dao.emprestimo_dao import EmprestimoDAO
 from dao.database import criar_conexao
+from dao.livro_dao import LivroDAO
+from exceptions.erros import EntradaInvalidaError, LivroIndisponivelError
 
 
 logger = configurar_logger()
@@ -15,40 +17,42 @@ DB_PATH = "biblioteca.db"
 class EmprestimoService:
 
     def __init__(self, usuario_service: Optional[UsuarioService] = None,
-                 livro_service: Optional[LivroService] = None) -> None:
+                 livro_service: Optional[LivroService] = None,
+                 emprestimo_dao: Optional[EmprestimoDAO] = None) -> None:
         self.usuario_service = usuario_service or UsuarioService()
         self.livro_service = livro_service or LivroService()
-        self.dao = EmprestimoDAO()  # Inicializa o DAO de empréstimos
+        self.dao = emprestimo_dao or EmprestimoDAO()    # Inicializa o DAO de empréstimos
 
     def criar_emprestimo(self, usuario_id: int, livro_id: int) -> Optional[Emprestimo]:
         """ Cria um novo empréstimo para um usuário e livro especificados. """
-        # Busca usuário e livro diretamente
+        # Busca usuário e livro diretamente do banco
         usuario = next((u for u in self.usuario_service.listar_usuarios() if u.id == usuario_id), None)
-        livro = next((l for l in self.livro_service.listar_livros() if l.id == livro_id), None)
+
+        livro = self.livro_service.buscar_por_id(livro_id)
 
         if not usuario:
             logger.warning("⚠️ Usuário não encontrado.")
-            return None
+            raise EntradaInvalidaError("usuario", "Usuário não encontrado")
         if not livro:
             logger.warning("⚠️ Livro não encontrado.")
-            return None
+            raise EntradaInvalidaError("livro", "Livro não encontrado")
 
         # Verifica se o livro está disponível
         if not livro.disponivel:
             print(f"❌ O livro '{livro.titulo}' já está emprestado.")
-            return None
+            raise LivroIndisponivelError(livro.titulo)
 
         # Registra o empréstimo no banco
         data_emprestimo = datetime.now()
-
-
         emprestimo = Emprestimo(None, usuario, livro, data_emprestimo)
-        self.dao.criar(emprestimo)  # Cria o empréstimo no banco
+        self.dao.criar(emprestimo)
 
         # Marca o livro como não disponível
+        self.livro_service.atualizar_livro(
+            livro.id, livro.titulo, livro.autor, livro.ano_publicacao, disponivel=False
+        )
         livro.disponivel = False
 
-        # Retorna o objeto do empréstimo
         logger.info(f"✅ Empréstimo registrado: {livro.titulo} → {usuario.nome}")
         return emprestimo
 
@@ -59,11 +63,28 @@ class EmprestimoService:
         return emprestimos
 
     def remover_emprestimo(self, emprestimo_id: int) -> None:
-        """Remove um empréstimo usando o ID."""
+        """Remove um empréstimo usando o ID e atualiza o livro para disponível."""
+        emprestimo = self.dao.buscar_por_id(emprestimo_id)  # Busca primeiro o empréstimo
+        if not emprestimo:
+            print(f"⚠️ Empréstimo ID {emprestimo_id} não encontrado.")
+            return
+
+        # Atualiza o livro como disponível no banco de dados
+        livro = emprestimo.livro
+        livro.disponivel = True  # Marca como disponível
+
+        # Atualiza o livro no banco, pois a disponibilidade mudou
+        self.livro_service.atualizar_livro(
+            livro.id, livro.titulo, livro.autor, livro.ano_publicacao, livro.disponivel
+        )
+
+        # Agora remove o empréstimo
         if self.dao.remover_emprestimo(emprestimo_id):
             print(f"✅ Empréstimo ID {emprestimo_id} removido com sucesso!")
+            logger.info(f"✅ Empréstimo ID {emprestimo_id} removido com sucesso.")
         else:
-            print(f"⚠️ Empréstimo ID {emprestimo_id} não encontrado.")
+            print(f"⚠️ Erro ao remover o empréstimo ID {emprestimo_id}.")
+            logger.warning(f"⚠️ Erro ao remover o empréstimo ID {emprestimo_id}.")
 
     def buscar_por_id(self, emprestimo_id: int) -> Optional[Emprestimo]:
             """

@@ -3,7 +3,7 @@
 from services.livro_service import LivroService
 from services.usuario_service import UsuarioService
 from services.emprestimo_service import EmprestimoService
-
+from services.autor_service import AutorService
 def menu():
     print("""
     === 📚 Sistema de Biblioteca ===
@@ -18,11 +18,16 @@ def menu():
     9. Registrar Empréstimo
     10. Listar Empréstimos
     11. Devolver Livro
+    12. Cadastrar Autor
+    13. Listar Autor
+    14. Atualizar Autor
+    15. Remover Autor
     0. Sair
     """)
 
 def main():
     livro_service = LivroService()
+    autor_service  = AutorService()
     usuario_service = UsuarioService()
     emprestimo_service = EmprestimoService(usuario_service, livro_service)
 
@@ -79,6 +84,24 @@ def main():
                     emprestimo_service.remover_emprestimo(emprestimo_id)
                 else:
                     print("⚠️ Empréstimo não encontrado.")
+
+
+            # Autor
+            case "12":
+                autor_service.criar_autor(input("Nome: "), input("Descrição: "))
+            case "13":
+                autor = autor_service.listar_autor()
+
+                if autor:
+                    for u in autor:
+                        print(f"[{u.id}] {u.nome} {u.descricao}")
+                else:
+                    print("📚 Nenhum autor cadastrado.")
+            case "14":
+                autor_service.atualizar_autor(int(input("ID: ")), input("Nova descricao: "))
+            case "15":
+                autor_service.remover_autor(int(input("ID: ")))
+
 
             # SAIR
             case "0":

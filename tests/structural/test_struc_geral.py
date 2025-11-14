@@ -7,6 +7,7 @@ from src.models.livro import Livro
 from src.models.emprestimo import Emprestimo
 from src.repositories.base_repository import BaseRepository
 from src.services.arquivo_service import ArquivoService
+from src.services.emprestimo_service import EmprestimoService
 
 @pytest.fixture
 def controller():
@@ -24,23 +25,17 @@ def test_emprestar_livro_livro_inexistente(controller):
     with pytest.raises(ValueError, match="Livro não encontrado"):
         controller.emprestar_livro(usuario.id, 999)
 
-def test_emprestar_livro_usuario_bloqueado(controller):
-    usuario = controller.usuarios_repo.adicionar(Usuario("Carlos"))
-    usuario.bloqueado = True
-    livro = controller.livros_repo.adicionar(Livro("Python 101", "Autor", 2020))
-    with pytest.raises(ValueError, match="Usuário bloqueado"):
-        controller.emprestar_livro(usuario.id, livro.id)
-
 def test_emprestar_livro_indisponivel(controller):
+
     usuario = controller.usuarios_repo.adicionar(Usuario("Paula"))
-    livro = controller.livros_repo.adicionar(Livro("Clean Code", "Martin", 2008))
+    livro = controller.livros_repo.adicionar(Livro(1,"Clean Code", "Martin", 2008))
     controller.emprestar_livro(usuario.id, livro.id)
     with pytest.raises(ValueError, match="Livro indisponível"):
         controller.emprestar_livro(usuario.id, livro.id)
 
 def test_emprestar_livro_sucesso(controller):
     usuario = controller.usuarios_repo.adicionar(Usuario("Lucas"))
-    livro = controller.livros_repo.adicionar(Livro("Dom Casmurro", "Machado", 1899))
+    livro = controller.livros_repo.adicionar(Livro(1,"Dom Casmurro", "Machado", 1899))
     emprestimo = controller.emprestar_livro(usuario.id, livro.id)
     assert isinstance(emprestimo, Emprestimo)
     assert not emprestimo.livro.disponivel
@@ -56,14 +51,14 @@ def test_devolver_livro_inexistente(controller):
 
 def test_devolver_livro_sucesso(controller):
     usuario = controller.usuarios_repo.adicionar(Usuario("Lucas"))
-    livro = controller.livros_repo.adicionar(Livro("Dom Casmurro", "Machado", 1899))
+    livro = controller.livros_repo.adicionar(Livro(1,"Dom Casmurro", "Machado", 1899))
     emprestimo = controller.emprestar_livro(usuario.id, livro.id)
     devolvido = controller.devolver_livro(emprestimo.id)
     assert devolvido.livro.disponivel
 
 def test_devolver_livro_dupla_devolucao(controller):
     usuario = controller.usuarios_repo.adicionar(Usuario("Mariana"))
-    livro = controller.livros_repo.adicionar(Livro("Python Avançado", "Autor", 2021))
+    livro = controller.livros_repo.adicionar(Livro(1,"Python Avançado", "Autor", 2021))
     emprestimo = controller.emprestar_livro(usuario.id, livro.id)
     controller.devolver_livro(emprestimo.id)
     devolvido = controller.devolver_livro(emprestimo.id)
@@ -75,8 +70,8 @@ def test_devolver_livro_dupla_devolucao(controller):
 def test_multiplos_emprestimos_e_devolucoes(controller):
     u1 = controller.usuarios_repo.adicionar(Usuario("Alice"))
     u2 = controller.usuarios_repo.adicionar(Usuario("Bob"))
-    l1 = controller.livros_repo.adicionar(Livro("Livro 1", "Autor1", 2000))
-    l2 = controller.livros_repo.adicionar(Livro("Livro 2", "Autor2", 2001))
+    l1 = controller.livros_repo.adicionar(Livro(1,"Livro 1", "Autor1", 2000))
+    l2 = controller.livros_repo.adicionar(Livro(1,"Livro 2", "Autor2", 2001))
 
     e1 = controller.emprestar_livro(u1.id, l1.id)
     e2 = controller.emprestar_livro(u2.id, l2.id)
@@ -96,12 +91,8 @@ def test_multiplos_emprestimos_e_devolucoes(controller):
 def test_usuario_estado_inicial():
     u = Usuario("Teste")
     assert u.nome == "Teste"
-    assert not u.bloqueado
 
-def test_usuario_bloqueio_e_atributos():
-    u = Usuario("Outro")
-    u.bloqueado = True
-    assert u.bloqueado
+
 
 def test_usuario_nome_vazio():
     with pytest.raises(ValueError):
@@ -117,40 +108,40 @@ def test_usuario_redefinir_nome():
     assert u.nome == "NovoNome"
 
 def test_livro_disponibilidade():
-    l = Livro("Python", "Autor", 2023)
+    l = Livro(1,"Python", "Autor", 2023)
     assert l.disponivel
     l.disponivel = False
     assert not l.disponivel
 
 def test_livro_ano_publicacao_invalido():
     with pytest.raises(ValueError, match="Ano não pode ser negativo."):
-        Livro("Titulo", "Autor", 0)
+        Livro(1,"Titulo", "Autor", 0)
     with pytest.raises(ValueError, match="Ano não pode ser negativo."):
-        Livro("Titulo", "Autor", -10)
+        Livro(1,"Titulo", "Autor", -10)
 
 def test_livro_ano_futuro():
     ano_futuro = datetime.now().year + 1
     with pytest.raises(ValueError, match="Ano de publicação inválido."):
-        Livro("Titulo Futuro", "Autor", ano_futuro)
+        Livro(1,"Titulo Futuro", "Autor", ano_futuro)
 
 def test_livro_titulo_vazio():
     with pytest.raises(ValueError, match="O título não pode ser vazio."):
-        Livro("", "Autor", 2000)
+        Livro(1,"", "Autor", 2000)
 
 def test_emprestimo_devolucao():
     u = Usuario("Ana")
-    l = Livro("Livro1", "Autor1", 2000)
-    e = Emprestimo(u, l)
+    l = Livro(1,"Livro1", "Autor1", 2000)
+    e = Emprestimo(1, u, l)
     assert e.livro.disponivel
-    e.devolver()
+    EmprestimoService().remover_emprestimo(e.id)
     assert e.livro.disponivel
 
 def test_emprestimo_dupla_devolucao_gera_erro():
     u = Usuario("Teste")
-    l = Livro("Livro Teste", "Autor", 2000)
-    e = Emprestimo(u, l)
-    e.devolver()
-    e.devolver()
+    l = Livro(1,"Livro Teste", "Autor", 2000)
+    e = Emprestimo(1, u, l)
+    EmprestimoService().remover_emprestimo(e.id)
+    EmprestimoService().remover_emprestimo(e.id)
     assert l.disponivel
 
 # =======================
@@ -234,7 +225,7 @@ def test_base_repository_atualizar_mesmo_objeto():
 # =======================
 def test_arquivo_service_salvar_carregar(tmp_path):
     arquivo = tmp_path / "livros.json"
-    livros = [Livro("L1", "A1", 2000)]
+    livros = [Livro(1,"L1", "A1", 2000)]
     ArquivoService.salvar_livros_json(str(arquivo), livros)
     assert arquivo.exists()
     carregados = ArquivoService.carregar_livros_json(str(arquivo))
@@ -280,15 +271,10 @@ def test_listar_livros_e_usuarios(controller):
     assert controller.livros_repo.listar() == []
     assert controller.usuarios_repo.listar() == []
     u = controller.usuarios_repo.adicionar(Usuario("Teste"))
-    l = controller.livros_repo.adicionar(Livro("L1", "A1", 2000))
+    l = controller.livros_repo.adicionar(Livro(1,"L1", "A1", 2000))
     assert controller.usuarios_repo.listar() == [u]
     assert controller.livros_repo.listar() == [l]
 
-def test_bloqueio_apos_emprestimo(controller):
-    u = controller.usuarios_repo.adicionar(Usuario("Bloqueio"))
-    l1 = controller.livros_repo.adicionar(Livro("Livro1", "Autor", 2000))
-    l2 = controller.livros_repo.adicionar(Livro("Livro2", "Autor", 2001))
-    controller.emprestar_livro(u.id, l1.id)
-    controller.emprestar_livro(u.id, l2.id)
-    # lógica de bloqueio específica do controller, se houver:
-    # assert u.bloqueado is True
+
+
+

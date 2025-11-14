@@ -96,3 +96,793 @@
 2025-11-12 03:52:12,383 - INFO - 📜 0 empréstimos listados.
 2025-11-12 03:52:12,383 - INFO - 📜 0 empréstimos listados.
 2025-11-12 03:52:12,383 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:05:53,104 - INFO - 📘 Serviço de livros inicializado.
+2025-11-12 12:05:53,117 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-12 12:05:53,117 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-12 12:05:53,123 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:05:53,123 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:05:53,123 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:05:53,123 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:05:58,558 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:05:58,558 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:05:58,558 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:05:58,558 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:06:04,896 - INFO - ✅ Empréstimo registrado: Livro Vera → Pedro
+2025-11-12 12:06:04,896 - INFO - ✅ Empréstimo registrado: Livro Vera → Pedro
+2025-11-12 12:06:04,896 - INFO - ✅ Empréstimo registrado: Livro Vera → Pedro
+2025-11-12 12:06:04,896 - INFO - ✅ Empréstimo registrado: Livro Vera → Pedro
+2025-11-12 12:06:05,780 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:06:05,780 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:06:05,780 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:06:05,780 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:06:08,928 - INFO - ✅ Empréstimo ID 6 removido com sucesso.
+2025-11-12 12:06:08,928 - INFO - ✅ Empréstimo ID 6 removido com sucesso.
+2025-11-12 12:06:08,928 - INFO - ✅ Empréstimo ID 6 removido com sucesso.
+2025-11-12 12:06:08,928 - INFO - ✅ Empréstimo ID 6 removido com sucesso.
+2025-11-12 12:06:09,811 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:06:09,811 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:06:09,811 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:06:09,811 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:06:14,343 - INFO - ✅ Livro 'aaaaaaa' cadastrado com sucesso.
+2025-11-12 12:06:14,343 - INFO - ✅ Livro 'aaaaaaa' cadastrado com sucesso.
+2025-11-12 12:06:14,343 - INFO - ✅ Livro 'aaaaaaa' cadastrado com sucesso.
+2025-11-12 12:06:14,343 - INFO - ✅ Livro 'aaaaaaa' cadastrado com sucesso.
+2025-11-12 12:06:31,257 - INFO - ✏️ Livro 3 atualizado com sucesso.
+2025-11-12 12:06:31,257 - INFO - ✏️ Livro 3 atualizado com sucesso.
+2025-11-12 12:06:31,257 - INFO - ✏️ Livro 3 atualizado com sucesso.
+2025-11-12 12:06:31,257 - INFO - ✏️ Livro 3 atualizado com sucesso.
+2025-11-12 12:06:36,755 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:06:36,755 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:06:36,755 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:06:36,755 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:06:42,060 - INFO - ✅ Usuário 'Ponte' cadastrado com sucesso.
+2025-11-12 12:06:42,060 - INFO - ✅ Usuário 'Ponte' cadastrado com sucesso.
+2025-11-12 12:06:42,060 - INFO - ✅ Usuário 'Ponte' cadastrado com sucesso.
+2025-11-12 12:06:42,060 - INFO - ✅ Usuário 'Ponte' cadastrado com sucesso.
+2025-11-12 12:06:47,954 - INFO - ✏️ Usuário 3 atualizado com sucesso.
+2025-11-12 12:06:47,954 - INFO - ✏️ Usuário 3 atualizado com sucesso.
+2025-11-12 12:06:47,954 - INFO - ✏️ Usuário 3 atualizado com sucesso.
+2025-11-12 12:06:47,954 - INFO - ✏️ Usuário 3 atualizado com sucesso.
+2025-11-12 12:06:52,958 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:06:52,958 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:06:52,958 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:06:52,958 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:06:55,871 - INFO - ✅ Empréstimo registrado: Livro Vera → Ponte Junui
+2025-11-12 12:06:55,871 - INFO - ✅ Empréstimo registrado: Livro Vera → Ponte Junui
+2025-11-12 12:06:55,871 - INFO - ✅ Empréstimo registrado: Livro Vera → Ponte Junui
+2025-11-12 12:06:55,871 - INFO - ✅ Empréstimo registrado: Livro Vera → Ponte Junui
+2025-11-12 12:06:56,493 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:06:56,493 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:06:56,493 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:06:56,493 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:07:01,648 - INFO - ✅ Empréstimo registrado: Livro Vera → Pedro
+2025-11-12 12:07:01,648 - INFO - ✅ Empréstimo registrado: Livro Vera → Pedro
+2025-11-12 12:07:01,648 - INFO - ✅ Empréstimo registrado: Livro Vera → Pedro
+2025-11-12 12:07:01,648 - INFO - ✅ Empréstimo registrado: Livro Vera → Pedro
+2025-11-12 12:07:02,595 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:07:02,595 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:07:02,595 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:07:02,595 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:07:14,542 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:07:14,542 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:07:14,542 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:07:14,542 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:07:16,728 - INFO - ✅ Empréstimo ID 8 removido com sucesso.
+2025-11-12 12:07:16,728 - INFO - ✅ Empréstimo ID 8 removido com sucesso.
+2025-11-12 12:07:16,728 - INFO - ✅ Empréstimo ID 8 removido com sucesso.
+2025-11-12 12:07:16,728 - INFO - ✅ Empréstimo ID 8 removido com sucesso.
+2025-11-12 12:07:17,403 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:07:17,403 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:07:17,403 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:07:17,403 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:07:18,469 - INFO - ✅ Empréstimo ID 7 removido com sucesso.
+2025-11-12 12:07:18,469 - INFO - ✅ Empréstimo ID 7 removido com sucesso.
+2025-11-12 12:07:18,469 - INFO - ✅ Empréstimo ID 7 removido com sucesso.
+2025-11-12 12:07:18,469 - INFO - ✅ Empréstimo ID 7 removido com sucesso.
+2025-11-12 12:07:19,096 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:07:19,096 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:07:19,096 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:07:19,096 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:07:22,822 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:07:22,822 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:07:22,822 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:07:22,822 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:29:21,954 - INFO - 📘 Serviço de livros inicializado.
+2025-11-12 12:29:21,958 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-12 12:29:21,958 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-12 12:29:21,972 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:29:21,972 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:29:21,972 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:29:21,972 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:29:25,402 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:29:25,402 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:29:25,402 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:29:25,402 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:29:28,472 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 12:29:28,472 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 12:29:28,472 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 12:29:28,472 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 12:29:28,473 - INFO - ✅ Empréstimo registrado: Livro Vera → Pedro
+2025-11-12 12:29:28,473 - INFO - ✅ Empréstimo registrado: Livro Vera → Pedro
+2025-11-12 12:29:28,473 - INFO - ✅ Empréstimo registrado: Livro Vera → Pedro
+2025-11-12 12:29:28,473 - INFO - ✅ Empréstimo registrado: Livro Vera → Pedro
+2025-11-12 12:29:29,968 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:29:29,968 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:29:29,968 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:29:29,968 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:29:35,298 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 12:29:35,298 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 12:29:35,298 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 12:29:35,298 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 12:29:35,299 - INFO - ✅ Empréstimo registrado: Livro Vera → Ponte Junui
+2025-11-12 12:29:35,299 - INFO - ✅ Empréstimo registrado: Livro Vera → Ponte Junui
+2025-11-12 12:29:35,299 - INFO - ✅ Empréstimo registrado: Livro Vera → Ponte Junui
+2025-11-12 12:29:35,299 - INFO - ✅ Empréstimo registrado: Livro Vera → Ponte Junui
+2025-11-12 12:29:36,378 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:29:36,378 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:29:36,378 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:29:36,378 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:29:46,134 - INFO - 📘 Serviço de livros inicializado.
+2025-11-12 12:29:46,138 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-12 12:29:46,138 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-12 12:29:46,144 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:29:46,144 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:29:46,144 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:29:46,144 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:29:59,109 - INFO - ✅ Livro 'Livro Pedro' cadastrado com sucesso.
+2025-11-12 12:29:59,109 - INFO - ✅ Livro 'Livro Pedro' cadastrado com sucesso.
+2025-11-12 12:29:59,109 - INFO - ✅ Livro 'Livro Pedro' cadastrado com sucesso.
+2025-11-12 12:29:59,109 - INFO - ✅ Livro 'Livro Pedro' cadastrado com sucesso.
+2025-11-12 12:30:05,428 - INFO - ✅ Usuário 'Pedro' cadastrado com sucesso.
+2025-11-12 12:30:05,428 - INFO - ✅ Usuário 'Pedro' cadastrado com sucesso.
+2025-11-12 12:30:05,428 - INFO - ✅ Usuário 'Pedro' cadastrado com sucesso.
+2025-11-12 12:30:05,428 - INFO - ✅ Usuário 'Pedro' cadastrado com sucesso.
+2025-11-12 12:30:17,749 - INFO - ✅ Livro 'Livro Vera' cadastrado com sucesso.
+2025-11-12 12:30:17,749 - INFO - ✅ Livro 'Livro Vera' cadastrado com sucesso.
+2025-11-12 12:30:17,749 - INFO - ✅ Livro 'Livro Vera' cadastrado com sucesso.
+2025-11-12 12:30:17,749 - INFO - ✅ Livro 'Livro Vera' cadastrado com sucesso.
+2025-11-12 12:30:23,601 - INFO - ✅ Usuário 'jOAO' cadastrado com sucesso.
+2025-11-12 12:30:23,601 - INFO - ✅ Usuário 'jOAO' cadastrado com sucesso.
+2025-11-12 12:30:23,601 - INFO - ✅ Usuário 'jOAO' cadastrado com sucesso.
+2025-11-12 12:30:23,601 - INFO - ✅ Usuário 'jOAO' cadastrado com sucesso.
+2025-11-12 12:30:25,416 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:30:25,416 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:30:25,416 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:30:25,416 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:30:28,151 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 12:30:28,151 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 12:30:28,151 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 12:30:28,151 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 12:30:28,152 - INFO - ✅ Empréstimo registrado: Livro Pedro → Pedro
+2025-11-12 12:30:28,152 - INFO - ✅ Empréstimo registrado: Livro Pedro → Pedro
+2025-11-12 12:30:28,152 - INFO - ✅ Empréstimo registrado: Livro Pedro → Pedro
+2025-11-12 12:30:28,152 - INFO - ✅ Empréstimo registrado: Livro Pedro → Pedro
+2025-11-12 12:30:29,017 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:30:29,017 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:30:29,017 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:30:29,017 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:30:31,979 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 12:30:31,979 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 12:30:31,979 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 12:30:31,979 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 12:30:31,981 - INFO - ✅ Empréstimo registrado: Livro Pedro → jOAO
+2025-11-12 12:30:31,981 - INFO - ✅ Empréstimo registrado: Livro Pedro → jOAO
+2025-11-12 12:30:31,981 - INFO - ✅ Empréstimo registrado: Livro Pedro → jOAO
+2025-11-12 12:30:31,981 - INFO - ✅ Empréstimo registrado: Livro Pedro → jOAO
+2025-11-12 12:30:33,031 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:30:33,031 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:30:33,031 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:30:33,031 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:51:09,670 - INFO - 📘 Serviço de livros inicializado.
+2025-11-12 12:51:09,674 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-12 12:51:09,674 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-12 12:51:09,679 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:51:09,679 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:51:09,679 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:51:09,679 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 12:51:11,120 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:51:11,120 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:51:11,120 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:51:11,120 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:51:15,228 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:51:15,228 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:51:15,228 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:51:15,228 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:51:18,265 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:51:18,265 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:51:18,265 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:51:18,265 - INFO - 📜 2 empréstimos listados.
+2025-11-12 12:51:19,828 - INFO - ✅ Empréstimo ID 1 removido com sucesso.
+2025-11-12 12:51:19,828 - INFO - ✅ Empréstimo ID 1 removido com sucesso.
+2025-11-12 12:51:19,828 - INFO - ✅ Empréstimo ID 1 removido com sucesso.
+2025-11-12 12:51:19,828 - INFO - ✅ Empréstimo ID 1 removido com sucesso.
+2025-11-12 12:51:20,604 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:51:20,604 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:51:20,604 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:51:20,604 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:51:27,402 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:51:27,402 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:51:27,402 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:51:27,402 - INFO - 📜 1 empréstimos listados.
+2025-11-12 12:51:29,815 - INFO - ✅ Empréstimo ID 4 removido com sucesso.
+2025-11-12 12:51:29,815 - INFO - ✅ Empréstimo ID 4 removido com sucesso.
+2025-11-12 12:51:29,815 - INFO - ✅ Empréstimo ID 4 removido com sucesso.
+2025-11-12 12:51:29,815 - INFO - ✅ Empréstimo ID 4 removido com sucesso.
+2025-11-12 12:51:30,612 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:51:30,612 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:51:30,612 - INFO - 📜 0 empréstimos listados.
+2025-11-12 12:51:30,612 - INFO - 📜 0 empréstimos listados.
+2025-11-12 13:35:09,834 - INFO - 📘 Serviço de livros inicializado.
+2025-11-12 13:35:09,838 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-12 13:35:09,838 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-12 13:35:09,843 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 13:35:09,843 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 13:35:09,843 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 13:35:09,843 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-12 13:35:12,649 - INFO - 📜 0 empréstimos listados.
+2025-11-12 13:35:12,649 - INFO - 📜 0 empréstimos listados.
+2025-11-12 13:35:12,649 - INFO - 📜 0 empréstimos listados.
+2025-11-12 13:35:12,649 - INFO - 📜 0 empréstimos listados.
+2025-11-12 13:35:15,711 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 13:35:15,711 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 13:35:15,711 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 13:35:15,711 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 13:35:15,712 - INFO - ✅ Empréstimo registrado: bbbbbbbbbb → aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-11-12 13:35:15,712 - INFO - ✅ Empréstimo registrado: bbbbbbbbbb → aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-11-12 13:35:15,712 - INFO - ✅ Empréstimo registrado: bbbbbbbbbb → aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-11-12 13:35:15,712 - INFO - ✅ Empréstimo registrado: bbbbbbbbbb → aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-11-12 13:35:16,607 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:16,607 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:16,607 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:16,607 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:18,337 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 13:35:18,337 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 13:35:18,337 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 13:35:18,337 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-12 13:35:18,429 - INFO - ✅ Empréstimo ID 3 removido com sucesso.
+2025-11-12 13:35:18,429 - INFO - ✅ Empréstimo ID 3 removido com sucesso.
+2025-11-12 13:35:18,429 - INFO - ✅ Empréstimo ID 3 removido com sucesso.
+2025-11-12 13:35:18,429 - INFO - ✅ Empréstimo ID 3 removido com sucesso.
+2025-11-12 13:35:18,430 - INFO - ✅ Empréstimo ID 3 removido com sucesso.
+2025-11-12 13:35:18,430 - INFO - ✅ Empréstimo ID 3 removido com sucesso.
+2025-11-12 13:35:18,430 - INFO - ✅ Empréstimo ID 3 removido com sucesso.
+2025-11-12 13:35:18,430 - INFO - ✅ Empréstimo ID 3 removido com sucesso.
+2025-11-12 13:35:19,104 - INFO - 📜 0 empréstimos listados.
+2025-11-12 13:35:19,104 - INFO - 📜 0 empréstimos listados.
+2025-11-12 13:35:19,104 - INFO - 📜 0 empréstimos listados.
+2025-11-12 13:35:19,104 - INFO - 📜 0 empréstimos listados.
+2025-11-12 13:35:21,630 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 13:35:21,630 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 13:35:21,630 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 13:35:21,630 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 13:35:21,632 - INFO - ✅ Empréstimo registrado: aaaaaaaaaa → aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-11-12 13:35:21,632 - INFO - ✅ Empréstimo registrado: aaaaaaaaaa → aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-11-12 13:35:21,632 - INFO - ✅ Empréstimo registrado: aaaaaaaaaa → aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-11-12 13:35:21,632 - INFO - ✅ Empréstimo registrado: aaaaaaaaaa → aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-11-12 13:35:22,421 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:22,421 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:22,421 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:22,421 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:26,434 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:26,434 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:26,434 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:26,434 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:31,559 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 13:35:31,559 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 13:35:31,559 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 13:35:31,559 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 13:35:31,650 - INFO - ✅ Empréstimo ID 4 removido com sucesso.
+2025-11-12 13:35:31,650 - INFO - ✅ Empréstimo ID 4 removido com sucesso.
+2025-11-12 13:35:31,650 - INFO - ✅ Empréstimo ID 4 removido com sucesso.
+2025-11-12 13:35:31,650 - INFO - ✅ Empréstimo ID 4 removido com sucesso.
+2025-11-12 13:35:31,651 - INFO - ✅ Empréstimo ID 4 removido com sucesso.
+2025-11-12 13:35:31,651 - INFO - ✅ Empréstimo ID 4 removido com sucesso.
+2025-11-12 13:35:31,651 - INFO - ✅ Empréstimo ID 4 removido com sucesso.
+2025-11-12 13:35:31,651 - INFO - ✅ Empréstimo ID 4 removido com sucesso.
+2025-11-12 13:35:33,040 - INFO - 📜 0 empréstimos listados.
+2025-11-12 13:35:33,040 - INFO - 📜 0 empréstimos listados.
+2025-11-12 13:35:33,040 - INFO - 📜 0 empréstimos listados.
+2025-11-12 13:35:33,040 - INFO - 📜 0 empréstimos listados.
+2025-11-12 13:35:35,404 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 13:35:35,404 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 13:35:35,404 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 13:35:35,404 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-12 13:35:35,406 - INFO - ✅ Empréstimo registrado: aaaaaaaaaa → aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-11-12 13:35:35,406 - INFO - ✅ Empréstimo registrado: aaaaaaaaaa → aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-11-12 13:35:35,406 - INFO - ✅ Empréstimo registrado: aaaaaaaaaa → aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-11-12 13:35:35,406 - INFO - ✅ Empréstimo registrado: aaaaaaaaaa → aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-11-12 13:35:36,117 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:36,117 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:36,117 - INFO - 📜 1 empréstimos listados.
+2025-11-12 13:35:36,117 - INFO - 📜 1 empréstimos listados.
+2025-11-13 13:26:15,837 - INFO - 📘 Serviço de livros inicializado.
+2025-11-13 13:26:15,854 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-13 13:26:15,854 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-13 13:26:15,860 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-13 13:26:15,860 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-13 13:26:15,860 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-13 13:26:15,860 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-13 13:26:15,865 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:26:15,865 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:26:15,865 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:26:15,865 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:26:15,865 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:26:28,574 - INFO - ✅ Autor 'Pecro' cadastrado com sucesso.
+2025-11-13 13:26:28,574 - INFO - ✅ Autor 'Pecro' cadastrado com sucesso.
+2025-11-13 13:26:28,574 - INFO - ✅ Autor 'Pecro' cadastrado com sucesso.
+2025-11-13 13:26:28,574 - INFO - ✅ Autor 'Pecro' cadastrado com sucesso.
+2025-11-13 13:26:28,574 - INFO - ✅ Autor 'Pecro' cadastrado com sucesso.
+2025-11-13 13:27:37,656 - INFO - 📘 Serviço de livros inicializado.
+2025-11-13 13:27:37,661 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-13 13:27:37,661 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-13 13:27:37,668 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-13 13:27:37,668 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-13 13:27:37,668 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-13 13:27:37,668 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-13 13:27:37,675 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:27:37,675 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:27:37,675 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:27:37,675 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:27:37,675 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:27:41,657 - INFO - 🗑️ Usuário 3 removido com sucesso.
+2025-11-13 13:27:41,657 - INFO - 🗑️ Usuário 3 removido com sucesso.
+2025-11-13 13:27:41,657 - INFO - 🗑️ Usuário 3 removido com sucesso.
+2025-11-13 13:27:41,657 - INFO - 🗑️ Usuário 3 removido com sucesso.
+2025-11-13 13:27:41,657 - INFO - 🗑️ Usuário 3 removido com sucesso.
+2025-11-13 13:27:54,603 - INFO - ✏️ Usuário 2 atualizado com sucesso.
+2025-11-13 13:27:54,603 - INFO - ✏️ Usuário 2 atualizado com sucesso.
+2025-11-13 13:27:54,603 - INFO - ✏️ Usuário 2 atualizado com sucesso.
+2025-11-13 13:27:54,603 - INFO - ✏️ Usuário 2 atualizado com sucesso.
+2025-11-13 13:27:54,603 - INFO - ✏️ Usuário 2 atualizado com sucesso.
+2025-11-13 13:28:13,069 - INFO - 📜 0 empréstimos listados.
+2025-11-13 13:28:13,069 - INFO - 📜 0 empréstimos listados.
+2025-11-13 13:28:13,069 - INFO - 📜 0 empréstimos listados.
+2025-11-13 13:28:13,069 - INFO - 📜 0 empréstimos listados.
+2025-11-13 13:28:13,069 - INFO - 📜 0 empréstimos listados.
+2025-11-13 13:32:58,516 - INFO - 📘 Serviço de livros inicializado.
+2025-11-13 13:32:58,519 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-13 13:32:58,519 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-13 13:32:58,525 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-13 13:32:58,525 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-13 13:32:58,525 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-13 13:32:58,525 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-13 13:32:58,530 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:32:58,530 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:32:58,530 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:32:58,530 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:32:58,530 - INFO - 👤 Serviço de autor inicializado.
+2025-11-13 13:34:39,902 - INFO - ✅ Livro 'Dom Quixote' cadastrado com sucesso.
+2025-11-13 13:34:39,902 - INFO - ✅ Livro 'Dom Quixote' cadastrado com sucesso.
+2025-11-13 13:34:39,902 - INFO - ✅ Livro 'Dom Quixote' cadastrado com sucesso.
+2025-11-13 13:34:39,902 - INFO - ✅ Livro 'Dom Quixote' cadastrado com sucesso.
+2025-11-13 13:34:39,902 - INFO - ✅ Livro 'Dom Quixote' cadastrado com sucesso.
+2025-11-13 13:35:22,691 - INFO - ✅ Livro 'O Pequeno Príncipe' cadastrado com sucesso.
+2025-11-13 13:35:22,691 - INFO - ✅ Livro 'O Pequeno Príncipe' cadastrado com sucesso.
+2025-11-13 13:35:22,691 - INFO - ✅ Livro 'O Pequeno Príncipe' cadastrado com sucesso.
+2025-11-13 13:35:22,691 - INFO - ✅ Livro 'O Pequeno Príncipe' cadastrado com sucesso.
+2025-11-13 13:35:22,691 - INFO - ✅ Livro 'O Pequeno Príncipe' cadastrado com sucesso.
+2025-11-13 13:36:00,345 - INFO - ✅ Livro 'Dom Casmurro' cadastrado com sucesso.
+2025-11-13 13:36:00,345 - INFO - ✅ Livro 'Dom Casmurro' cadastrado com sucesso.
+2025-11-13 13:36:00,345 - INFO - ✅ Livro 'Dom Casmurro' cadastrado com sucesso.
+2025-11-13 13:36:00,345 - INFO - ✅ Livro 'Dom Casmurro' cadastrado com sucesso.
+2025-11-13 13:36:00,345 - INFO - ✅ Livro 'Dom Casmurro' cadastrado com sucesso.
+2025-11-13 13:36:31,147 - INFO - ✅ Livro 'O alienista' cadastrado com sucesso.
+2025-11-13 13:36:31,147 - INFO - ✅ Livro 'O alienista' cadastrado com sucesso.
+2025-11-13 13:36:31,147 - INFO - ✅ Livro 'O alienista' cadastrado com sucesso.
+2025-11-13 13:36:31,147 - INFO - ✅ Livro 'O alienista' cadastrado com sucesso.
+2025-11-13 13:36:31,147 - INFO - ✅ Livro 'O alienista' cadastrado com sucesso.
+2025-11-13 13:37:15,445 - INFO - ✅ Livro 'O Código Da Vinci' cadastrado com sucesso.
+2025-11-13 13:37:15,445 - INFO - ✅ Livro 'O Código Da Vinci' cadastrado com sucesso.
+2025-11-13 13:37:15,445 - INFO - ✅ Livro 'O Código Da Vinci' cadastrado com sucesso.
+2025-11-13 13:37:15,445 - INFO - ✅ Livro 'O Código Da Vinci' cadastrado com sucesso.
+2025-11-13 13:37:15,445 - INFO - ✅ Livro 'O Código Da Vinci' cadastrado com sucesso.
+2025-11-13 13:37:22,130 - INFO - 🗑️ Livro 3 removido com sucesso.
+2025-11-13 13:37:22,130 - INFO - 🗑️ Livro 3 removido com sucesso.
+2025-11-13 13:37:22,130 - INFO - 🗑️ Livro 3 removido com sucesso.
+2025-11-13 13:37:22,130 - INFO - 🗑️ Livro 3 removido com sucesso.
+2025-11-13 13:37:22,130 - INFO - 🗑️ Livro 3 removido com sucesso.
+2025-11-13 13:38:01,818 - INFO - ✅ Livro 'Orgulho e preconceito' cadastrado com sucesso.
+2025-11-13 13:38:01,818 - INFO - ✅ Livro 'Orgulho e preconceito' cadastrado com sucesso.
+2025-11-13 13:38:01,818 - INFO - ✅ Livro 'Orgulho e preconceito' cadastrado com sucesso.
+2025-11-13 13:38:01,818 - INFO - ✅ Livro 'Orgulho e preconceito' cadastrado com sucesso.
+2025-11-13 13:38:01,818 - INFO - ✅ Livro 'Orgulho e preconceito' cadastrado com sucesso.
+2025-11-13 13:38:11,806 - INFO - 🗑️ Livro 6 removido com sucesso.
+2025-11-13 13:38:11,806 - INFO - 🗑️ Livro 6 removido com sucesso.
+2025-11-13 13:38:11,806 - INFO - 🗑️ Livro 6 removido com sucesso.
+2025-11-13 13:38:11,806 - INFO - 🗑️ Livro 6 removido com sucesso.
+2025-11-13 13:38:11,806 - INFO - 🗑️ Livro 6 removido com sucesso.
+2025-11-13 13:38:29,919 - INFO - ✅ Livro 'Orgulho e Preconceito' cadastrado com sucesso.
+2025-11-13 13:38:29,919 - INFO - ✅ Livro 'Orgulho e Preconceito' cadastrado com sucesso.
+2025-11-13 13:38:29,919 - INFO - ✅ Livro 'Orgulho e Preconceito' cadastrado com sucesso.
+2025-11-13 13:38:29,919 - INFO - ✅ Livro 'Orgulho e Preconceito' cadastrado com sucesso.
+2025-11-13 13:38:29,919 - INFO - ✅ Livro 'Orgulho e Preconceito' cadastrado com sucesso.
+2025-11-13 13:39:41,851 - INFO - ✅ Usuário 'Pedro' cadastrado com sucesso.
+2025-11-13 13:39:41,851 - INFO - ✅ Usuário 'Pedro' cadastrado com sucesso.
+2025-11-13 13:39:41,851 - INFO - ✅ Usuário 'Pedro' cadastrado com sucesso.
+2025-11-13 13:39:41,851 - INFO - ✅ Usuário 'Pedro' cadastrado com sucesso.
+2025-11-13 13:39:41,851 - INFO - ✅ Usuário 'Pedro' cadastrado com sucesso.
+2025-11-13 13:39:47,728 - INFO - ✅ Usuário 'Bianca' cadastrado com sucesso.
+2025-11-13 13:39:47,728 - INFO - ✅ Usuário 'Bianca' cadastrado com sucesso.
+2025-11-13 13:39:47,728 - INFO - ✅ Usuário 'Bianca' cadastrado com sucesso.
+2025-11-13 13:39:47,728 - INFO - ✅ Usuário 'Bianca' cadastrado com sucesso.
+2025-11-13 13:39:47,728 - INFO - ✅ Usuário 'Bianca' cadastrado com sucesso.
+2025-11-13 13:39:51,594 - INFO - ✅ Usuário 'Tobias' cadastrado com sucesso.
+2025-11-13 13:39:51,594 - INFO - ✅ Usuário 'Tobias' cadastrado com sucesso.
+2025-11-13 13:39:51,594 - INFO - ✅ Usuário 'Tobias' cadastrado com sucesso.
+2025-11-13 13:39:51,594 - INFO - ✅ Usuário 'Tobias' cadastrado com sucesso.
+2025-11-13 13:39:51,594 - INFO - ✅ Usuário 'Tobias' cadastrado com sucesso.
+2025-11-13 13:39:58,198 - INFO - ✅ Usuário 'Maria' cadastrado com sucesso.
+2025-11-13 13:39:58,198 - INFO - ✅ Usuário 'Maria' cadastrado com sucesso.
+2025-11-13 13:39:58,198 - INFO - ✅ Usuário 'Maria' cadastrado com sucesso.
+2025-11-13 13:39:58,198 - INFO - ✅ Usuário 'Maria' cadastrado com sucesso.
+2025-11-13 13:39:58,198 - INFO - ✅ Usuário 'Maria' cadastrado com sucesso.
+2025-11-13 13:40:05,056 - INFO - ✅ Usuário 'Breno' cadastrado com sucesso.
+2025-11-13 13:40:05,056 - INFO - ✅ Usuário 'Breno' cadastrado com sucesso.
+2025-11-13 13:40:05,056 - INFO - ✅ Usuário 'Breno' cadastrado com sucesso.
+2025-11-13 13:40:05,056 - INFO - ✅ Usuário 'Breno' cadastrado com sucesso.
+2025-11-13 13:40:05,056 - INFO - ✅ Usuário 'Breno' cadastrado com sucesso.
+2025-11-13 13:40:13,236 - INFO - ✅ Usuário 'Bruna' cadastrado com sucesso.
+2025-11-13 13:40:13,236 - INFO - ✅ Usuário 'Bruna' cadastrado com sucesso.
+2025-11-13 13:40:13,236 - INFO - ✅ Usuário 'Bruna' cadastrado com sucesso.
+2025-11-13 13:40:13,236 - INFO - ✅ Usuário 'Bruna' cadastrado com sucesso.
+2025-11-13 13:40:13,236 - INFO - ✅ Usuário 'Bruna' cadastrado com sucesso.
+2025-11-13 13:40:58,639 - INFO - 📜 0 empréstimos listados.
+2025-11-13 13:40:58,639 - INFO - 📜 0 empréstimos listados.
+2025-11-13 13:40:58,639 - INFO - 📜 0 empréstimos listados.
+2025-11-13 13:40:58,639 - INFO - 📜 0 empréstimos listados.
+2025-11-13 13:40:58,639 - INFO - 📜 0 empréstimos listados.
+2025-11-13 13:41:15,840 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-13 13:41:15,840 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-13 13:41:15,840 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-13 13:41:15,840 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-13 13:41:15,840 - INFO - ✏️ Livro 1 atualizado com sucesso.
+2025-11-13 13:41:15,842 - INFO - ✅ Empréstimo registrado: Dom Quixote → Pedro
+2025-11-13 13:41:15,842 - INFO - ✅ Empréstimo registrado: Dom Quixote → Pedro
+2025-11-13 13:41:15,842 - INFO - ✅ Empréstimo registrado: Dom Quixote → Pedro
+2025-11-13 13:41:15,842 - INFO - ✅ Empréstimo registrado: Dom Quixote → Pedro
+2025-11-13 13:41:15,842 - INFO - ✅ Empréstimo registrado: Dom Quixote → Pedro
+2025-11-13 13:41:17,211 - INFO - 📜 1 empréstimos listados.
+2025-11-13 13:41:17,211 - INFO - 📜 1 empréstimos listados.
+2025-11-13 13:41:17,211 - INFO - 📜 1 empréstimos listados.
+2025-11-13 13:41:17,211 - INFO - 📜 1 empréstimos listados.
+2025-11-13 13:41:17,211 - INFO - 📜 1 empréstimos listados.
+2025-11-13 13:41:21,025 - INFO - ✏️ Livro 7 atualizado com sucesso.
+2025-11-13 13:41:21,025 - INFO - ✏️ Livro 7 atualizado com sucesso.
+2025-11-13 13:41:21,025 - INFO - ✏️ Livro 7 atualizado com sucesso.
+2025-11-13 13:41:21,025 - INFO - ✏️ Livro 7 atualizado com sucesso.
+2025-11-13 13:41:21,025 - INFO - ✏️ Livro 7 atualizado com sucesso.
+2025-11-13 13:41:21,026 - INFO - ✅ Empréstimo registrado: Orgulho e Preconceito → Bianca
+2025-11-13 13:41:21,026 - INFO - ✅ Empréstimo registrado: Orgulho e Preconceito → Bianca
+2025-11-13 13:41:21,026 - INFO - ✅ Empréstimo registrado: Orgulho e Preconceito → Bianca
+2025-11-13 13:41:21,026 - INFO - ✅ Empréstimo registrado: Orgulho e Preconceito → Bianca
+2025-11-13 13:41:21,026 - INFO - ✅ Empréstimo registrado: Orgulho e Preconceito → Bianca
+2025-11-13 13:41:22,127 - INFO - 📜 2 empréstimos listados.
+2025-11-13 13:41:22,127 - INFO - 📜 2 empréstimos listados.
+2025-11-13 13:41:22,127 - INFO - 📜 2 empréstimos listados.
+2025-11-13 13:41:22,127 - INFO - 📜 2 empréstimos listados.
+2025-11-13 13:41:22,127 - INFO - 📜 2 empréstimos listados.
+2025-11-13 13:41:25,302 - INFO - ✏️ Livro 4 atualizado com sucesso.
+2025-11-13 13:41:25,302 - INFO - ✏️ Livro 4 atualizado com sucesso.
+2025-11-13 13:41:25,302 - INFO - ✏️ Livro 4 atualizado com sucesso.
+2025-11-13 13:41:25,302 - INFO - ✏️ Livro 4 atualizado com sucesso.
+2025-11-13 13:41:25,302 - INFO - ✏️ Livro 4 atualizado com sucesso.
+2025-11-13 13:41:25,303 - INFO - ✅ Empréstimo registrado: O alienista → Breno
+2025-11-13 13:41:25,303 - INFO - ✅ Empréstimo registrado: O alienista → Breno
+2025-11-13 13:41:25,303 - INFO - ✅ Empréstimo registrado: O alienista → Breno
+2025-11-13 13:41:25,303 - INFO - ✅ Empréstimo registrado: O alienista → Breno
+2025-11-13 13:41:25,303 - INFO - ✅ Empréstimo registrado: O alienista → Breno
+2025-11-13 13:41:26,499 - INFO - 📜 3 empréstimos listados.
+2025-11-13 13:41:26,499 - INFO - 📜 3 empréstimos listados.
+2025-11-13 13:41:26,499 - INFO - 📜 3 empréstimos listados.
+2025-11-13 13:41:26,499 - INFO - 📜 3 empréstimos listados.
+2025-11-13 13:41:26,499 - INFO - 📜 3 empréstimos listados.
+2025-11-13 13:41:36,872 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-13 13:41:36,872 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-13 13:41:36,872 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-13 13:41:36,872 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-13 13:41:36,872 - INFO - ✏️ Livro 2 atualizado com sucesso.
+2025-11-13 13:41:36,874 - INFO - ✅ Empréstimo registrado: O Pequeno Príncipe → Bruna
+2025-11-13 13:41:36,874 - INFO - ✅ Empréstimo registrado: O Pequeno Príncipe → Bruna
+2025-11-13 13:41:36,874 - INFO - ✅ Empréstimo registrado: O Pequeno Príncipe → Bruna
+2025-11-13 13:41:36,874 - INFO - ✅ Empréstimo registrado: O Pequeno Príncipe → Bruna
+2025-11-13 13:41:36,874 - INFO - ✅ Empréstimo registrado: O Pequeno Príncipe → Bruna
+2025-11-13 13:41:37,704 - INFO - 📜 4 empréstimos listados.
+2025-11-13 13:41:37,704 - INFO - 📜 4 empréstimos listados.
+2025-11-13 13:41:37,704 - INFO - 📜 4 empréstimos listados.
+2025-11-13 13:41:37,704 - INFO - 📜 4 empréstimos listados.
+2025-11-13 13:41:37,704 - INFO - 📜 4 empréstimos listados.
+2025-11-13 13:41:43,349 - INFO - ✏️ Livro 5 atualizado com sucesso.
+2025-11-13 13:41:43,349 - INFO - ✏️ Livro 5 atualizado com sucesso.
+2025-11-13 13:41:43,349 - INFO - ✏️ Livro 5 atualizado com sucesso.
+2025-11-13 13:41:43,349 - INFO - ✏️ Livro 5 atualizado com sucesso.
+2025-11-13 13:41:43,349 - INFO - ✏️ Livro 5 atualizado com sucesso.
+2025-11-13 13:41:43,351 - INFO - ✅ Empréstimo registrado: O Código Da Vinci → Tobias
+2025-11-13 13:41:43,351 - INFO - ✅ Empréstimo registrado: O Código Da Vinci → Tobias
+2025-11-13 13:41:43,351 - INFO - ✅ Empréstimo registrado: O Código Da Vinci → Tobias
+2025-11-13 13:41:43,351 - INFO - ✅ Empréstimo registrado: O Código Da Vinci → Tobias
+2025-11-13 13:41:43,351 - INFO - ✅ Empréstimo registrado: O Código Da Vinci → Tobias
+2025-11-13 13:41:44,330 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:41:44,330 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:41:44,330 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:41:44,330 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:41:44,330 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:43:13,854 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:43:13,854 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:43:13,854 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:43:13,854 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:43:13,854 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:43:26,817 - INFO - 🗑️ Usuário 2 removido com sucesso.
+2025-11-13 13:43:26,817 - INFO - 🗑️ Usuário 2 removido com sucesso.
+2025-11-13 13:43:26,817 - INFO - 🗑️ Usuário 2 removido com sucesso.
+2025-11-13 13:43:26,817 - INFO - 🗑️ Usuário 2 removido com sucesso.
+2025-11-13 13:43:26,817 - INFO - 🗑️ Usuário 2 removido com sucesso.
+2025-11-13 13:43:52,642 - INFO - ✅ Autor 'Machado de Assis' cadastrado com sucesso.
+2025-11-13 13:43:52,642 - INFO - ✅ Autor 'Machado de Assis' cadastrado com sucesso.
+2025-11-13 13:43:52,642 - INFO - ✅ Autor 'Machado de Assis' cadastrado com sucesso.
+2025-11-13 13:43:52,642 - INFO - ✅ Autor 'Machado de Assis' cadastrado com sucesso.
+2025-11-13 13:43:52,642 - INFO - ✅ Autor 'Machado de Assis' cadastrado com sucesso.
+2025-11-13 13:44:32,288 - INFO - ✅ Autor 'Jane Austen' cadastrado com sucesso.
+2025-11-13 13:44:32,288 - INFO - ✅ Autor 'Jane Austen' cadastrado com sucesso.
+2025-11-13 13:44:32,288 - INFO - ✅ Autor 'Jane Austen' cadastrado com sucesso.
+2025-11-13 13:44:32,288 - INFO - ✅ Autor 'Jane Austen' cadastrado com sucesso.
+2025-11-13 13:44:32,288 - INFO - ✅ Autor 'Jane Austen' cadastrado com sucesso.
+2025-11-13 13:46:02,233 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:46:02,233 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:46:02,233 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:46:02,233 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:46:02,233 - INFO - 📜 5 empréstimos listados.
+2025-11-13 13:53:15,636 - INFO - 🗑️ Usuário 4 removido com sucesso.
+2025-11-13 13:53:15,636 - INFO - 🗑️ Usuário 4 removido com sucesso.
+2025-11-13 13:53:15,636 - INFO - 🗑️ Usuário 4 removido com sucesso.
+2025-11-13 13:53:15,636 - INFO - 🗑️ Usuário 4 removido com sucesso.
+2025-11-13 13:53:15,636 - INFO - 🗑️ Usuário 4 removido com sucesso.
+2025-11-13 13:53:18,513 - INFO - 🗑️ Usuário 5 removido com sucesso.
+2025-11-13 13:53:18,513 - INFO - 🗑️ Usuário 5 removido com sucesso.
+2025-11-13 13:53:18,513 - INFO - 🗑️ Usuário 5 removido com sucesso.
+2025-11-13 13:53:18,513 - INFO - 🗑️ Usuário 5 removido com sucesso.
+2025-11-13 13:53:18,513 - INFO - 🗑️ Usuário 5 removido com sucesso.
+2025-11-13 13:53:25,348 - INFO - 🗑️ Livro 1 removido com sucesso.
+2025-11-13 13:53:25,348 - INFO - 🗑️ Livro 1 removido com sucesso.
+2025-11-13 13:53:25,348 - INFO - 🗑️ Livro 1 removido com sucesso.
+2025-11-13 13:53:25,348 - INFO - 🗑️ Livro 1 removido com sucesso.
+2025-11-13 13:53:25,348 - INFO - 🗑️ Livro 1 removido com sucesso.
+2025-11-13 13:53:25,407 - INFO - 🗑️ Livro 2 removido com sucesso.
+2025-11-13 13:53:25,407 - INFO - 🗑️ Livro 2 removido com sucesso.
+2025-11-13 13:53:25,407 - INFO - 🗑️ Livro 2 removido com sucesso.
+2025-11-13 13:53:25,407 - INFO - 🗑️ Livro 2 removido com sucesso.
+2025-11-13 13:53:25,407 - INFO - 🗑️ Livro 2 removido com sucesso.
+2025-11-13 13:53:25,465 - INFO - 🗑️ Livro 4 removido com sucesso.
+2025-11-13 13:53:25,465 - INFO - 🗑️ Livro 4 removido com sucesso.
+2025-11-13 13:53:25,465 - INFO - 🗑️ Livro 4 removido com sucesso.
+2025-11-13 13:53:25,465 - INFO - 🗑️ Livro 4 removido com sucesso.
+2025-11-13 13:53:25,465 - INFO - 🗑️ Livro 4 removido com sucesso.
+2025-11-13 13:53:25,523 - INFO - 🗑️ Livro 5 removido com sucesso.
+2025-11-13 13:53:25,523 - INFO - 🗑️ Livro 5 removido com sucesso.
+2025-11-13 13:53:25,523 - INFO - 🗑️ Livro 5 removido com sucesso.
+2025-11-13 13:53:25,523 - INFO - 🗑️ Livro 5 removido com sucesso.
+2025-11-13 13:53:25,523 - INFO - 🗑️ Livro 5 removido com sucesso.
+2025-11-13 13:53:25,590 - INFO - 🗑️ Livro 7 removido com sucesso.
+2025-11-13 13:53:25,590 - INFO - 🗑️ Livro 7 removido com sucesso.
+2025-11-13 13:53:25,590 - INFO - 🗑️ Livro 7 removido com sucesso.
+2025-11-13 13:53:25,590 - INFO - 🗑️ Livro 7 removido com sucesso.
+2025-11-13 13:53:25,590 - INFO - 🗑️ Livro 7 removido com sucesso.
+2025-11-13 13:59:12,596 - INFO - ✅ Livro 'Dom Quixote' cadastrado com sucesso.
+2025-11-13 13:59:12,596 - INFO - ✅ Livro 'Dom Quixote' cadastrado com sucesso.
+2025-11-13 13:59:12,596 - INFO - ✅ Livro 'Dom Quixote' cadastrado com sucesso.
+2025-11-13 13:59:12,596 - INFO - ✅ Livro 'Dom Quixote' cadastrado com sucesso.
+2025-11-13 13:59:12,596 - INFO - ✅ Livro 'Dom Quixote' cadastrado com sucesso.
+2025-11-13 13:59:23,132 - INFO - ✅ Livro 'O Pequeno Príncipe' cadastrado com sucesso.
+2025-11-13 13:59:23,132 - INFO - ✅ Livro 'O Pequeno Príncipe' cadastrado com sucesso.
+2025-11-13 13:59:23,132 - INFO - ✅ Livro 'O Pequeno Príncipe' cadastrado com sucesso.
+2025-11-13 13:59:23,132 - INFO - ✅ Livro 'O Pequeno Príncipe' cadastrado com sucesso.
+2025-11-13 13:59:23,132 - INFO - ✅ Livro 'O Pequeno Príncipe' cadastrado com sucesso.
+2025-11-13 13:59:34,503 - INFO - ✅ Livro 'Os Três Mosqueteiros' cadastrado com sucesso.
+2025-11-13 13:59:34,503 - INFO - ✅ Livro 'Os Três Mosqueteiros' cadastrado com sucesso.
+2025-11-13 13:59:34,503 - INFO - ✅ Livro 'Os Três Mosqueteiros' cadastrado com sucesso.
+2025-11-13 13:59:34,503 - INFO - ✅ Livro 'Os Três Mosqueteiros' cadastrado com sucesso.
+2025-11-13 13:59:34,503 - INFO - ✅ Livro 'Os Três Mosqueteiros' cadastrado com sucesso.
+2025-11-13 13:59:47,232 - INFO - ✅ Livro 'Orgulho e Preconceito' cadastrado com sucesso.
+2025-11-13 13:59:47,232 - INFO - ✅ Livro 'Orgulho e Preconceito' cadastrado com sucesso.
+2025-11-13 13:59:47,232 - INFO - ✅ Livro 'Orgulho e Preconceito' cadastrado com sucesso.
+2025-11-13 13:59:47,232 - INFO - ✅ Livro 'Orgulho e Preconceito' cadastrado com sucesso.
+2025-11-13 13:59:47,232 - INFO - ✅ Livro 'Orgulho e Preconceito' cadastrado com sucesso.
+2025-11-13 13:59:56,818 - INFO - ✅ Livro 'O Código Da Vinci' cadastrado com sucesso.
+2025-11-13 13:59:56,818 - INFO - ✅ Livro 'O Código Da Vinci' cadastrado com sucesso.
+2025-11-13 13:59:56,818 - INFO - ✅ Livro 'O Código Da Vinci' cadastrado com sucesso.
+2025-11-13 13:59:56,818 - INFO - ✅ Livro 'O Código Da Vinci' cadastrado com sucesso.
+2025-11-13 13:59:56,818 - INFO - ✅ Livro 'O Código Da Vinci' cadastrado com sucesso.
+2025-11-13 14:00:05,971 - INFO - ✅ Livro 'O Alquimista' cadastrado com sucesso.
+2025-11-13 14:00:05,971 - INFO - ✅ Livro 'O Alquimista' cadastrado com sucesso.
+2025-11-13 14:00:05,971 - INFO - ✅ Livro 'O Alquimista' cadastrado com sucesso.
+2025-11-13 14:00:05,971 - INFO - ✅ Livro 'O Alquimista' cadastrado com sucesso.
+2025-11-13 14:00:05,971 - INFO - ✅ Livro 'O Alquimista' cadastrado com sucesso.
+2025-11-13 14:00:20,751 - INFO - ✅ Usuário 'Paulo' cadastrado com sucesso.
+2025-11-13 14:00:20,751 - INFO - ✅ Usuário 'Paulo' cadastrado com sucesso.
+2025-11-13 14:00:20,751 - INFO - ✅ Usuário 'Paulo' cadastrado com sucesso.
+2025-11-13 14:00:20,751 - INFO - ✅ Usuário 'Paulo' cadastrado com sucesso.
+2025-11-13 14:00:20,751 - INFO - ✅ Usuário 'Paulo' cadastrado com sucesso.
+2025-11-13 14:00:25,645 - INFO - 📜 0 empréstimos listados.
+2025-11-13 14:00:25,645 - INFO - 📜 0 empréstimos listados.
+2025-11-13 14:00:25,645 - INFO - 📜 0 empréstimos listados.
+2025-11-13 14:00:25,645 - INFO - 📜 0 empréstimos listados.
+2025-11-13 14:00:25,645 - INFO - 📜 0 empréstimos listados.
+2025-11-13 14:00:30,388 - INFO - ✏️ Livro 8 atualizado com sucesso.
+2025-11-13 14:00:30,388 - INFO - ✏️ Livro 8 atualizado com sucesso.
+2025-11-13 14:00:30,388 - INFO - ✏️ Livro 8 atualizado com sucesso.
+2025-11-13 14:00:30,388 - INFO - ✏️ Livro 8 atualizado com sucesso.
+2025-11-13 14:00:30,388 - INFO - ✏️ Livro 8 atualizado com sucesso.
+2025-11-13 14:00:30,390 - INFO - ✅ Empréstimo registrado: Dom Quixote → Pedro
+2025-11-13 14:00:30,390 - INFO - ✅ Empréstimo registrado: Dom Quixote → Pedro
+2025-11-13 14:00:30,390 - INFO - ✅ Empréstimo registrado: Dom Quixote → Pedro
+2025-11-13 14:00:30,390 - INFO - ✅ Empréstimo registrado: Dom Quixote → Pedro
+2025-11-13 14:00:30,390 - INFO - ✅ Empréstimo registrado: Dom Quixote → Pedro
+2025-11-13 14:00:31,204 - INFO - 📜 1 empréstimos listados.
+2025-11-13 14:00:31,204 - INFO - 📜 1 empréstimos listados.
+2025-11-13 14:00:31,204 - INFO - 📜 1 empréstimos listados.
+2025-11-13 14:00:31,204 - INFO - 📜 1 empréstimos listados.
+2025-11-13 14:00:31,204 - INFO - 📜 1 empréstimos listados.
+2025-11-13 14:00:34,531 - INFO - ✏️ Livro 10 atualizado com sucesso.
+2025-11-13 14:00:34,531 - INFO - ✏️ Livro 10 atualizado com sucesso.
+2025-11-13 14:00:34,531 - INFO - ✏️ Livro 10 atualizado com sucesso.
+2025-11-13 14:00:34,531 - INFO - ✏️ Livro 10 atualizado com sucesso.
+2025-11-13 14:00:34,531 - INFO - ✏️ Livro 10 atualizado com sucesso.
+2025-11-13 14:00:34,533 - INFO - ✅ Empréstimo registrado: Os Três Mosqueteiros → Pedro
+2025-11-13 14:00:34,533 - INFO - ✅ Empréstimo registrado: Os Três Mosqueteiros → Pedro
+2025-11-13 14:00:34,533 - INFO - ✅ Empréstimo registrado: Os Três Mosqueteiros → Pedro
+2025-11-13 14:00:34,533 - INFO - ✅ Empréstimo registrado: Os Três Mosqueteiros → Pedro
+2025-11-13 14:00:34,533 - INFO - ✅ Empréstimo registrado: Os Três Mosqueteiros → Pedro
+2025-11-13 14:00:35,415 - INFO - 📜 2 empréstimos listados.
+2025-11-13 14:00:35,415 - INFO - 📜 2 empréstimos listados.
+2025-11-13 14:00:35,415 - INFO - 📜 2 empréstimos listados.
+2025-11-13 14:00:35,415 - INFO - 📜 2 empréstimos listados.
+2025-11-13 14:00:35,415 - INFO - 📜 2 empréstimos listados.
+2025-11-13 14:00:38,207 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:00:38,207 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:00:38,207 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:00:38,207 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:00:38,207 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:00:38,209 - INFO - ✅ Empréstimo registrado: O Alquimista → Tobias
+2025-11-13 14:00:38,209 - INFO - ✅ Empréstimo registrado: O Alquimista → Tobias
+2025-11-13 14:00:38,209 - INFO - ✅ Empréstimo registrado: O Alquimista → Tobias
+2025-11-13 14:00:38,209 - INFO - ✅ Empréstimo registrado: O Alquimista → Tobias
+2025-11-13 14:00:38,209 - INFO - ✅ Empréstimo registrado: O Alquimista → Tobias
+2025-11-13 14:00:39,002 - INFO - 📜 3 empréstimos listados.
+2025-11-13 14:00:39,002 - INFO - 📜 3 empréstimos listados.
+2025-11-13 14:00:39,002 - INFO - 📜 3 empréstimos listados.
+2025-11-13 14:00:39,002 - INFO - 📜 3 empréstimos listados.
+2025-11-13 14:00:39,002 - INFO - 📜 3 empréstimos listados.
+2025-11-13 14:00:42,226 - INFO - ✏️ Livro 9 atualizado com sucesso.
+2025-11-13 14:00:42,226 - INFO - ✏️ Livro 9 atualizado com sucesso.
+2025-11-13 14:00:42,226 - INFO - ✏️ Livro 9 atualizado com sucesso.
+2025-11-13 14:00:42,226 - INFO - ✏️ Livro 9 atualizado com sucesso.
+2025-11-13 14:00:42,226 - INFO - ✏️ Livro 9 atualizado com sucesso.
+2025-11-13 14:00:42,228 - INFO - ✅ Empréstimo registrado: O Pequeno Príncipe → Bruna
+2025-11-13 14:00:42,228 - INFO - ✅ Empréstimo registrado: O Pequeno Príncipe → Bruna
+2025-11-13 14:00:42,228 - INFO - ✅ Empréstimo registrado: O Pequeno Príncipe → Bruna
+2025-11-13 14:00:42,228 - INFO - ✅ Empréstimo registrado: O Pequeno Príncipe → Bruna
+2025-11-13 14:00:42,228 - INFO - ✅ Empréstimo registrado: O Pequeno Príncipe → Bruna
+2025-11-13 14:00:42,884 - INFO - 📜 4 empréstimos listados.
+2025-11-13 14:00:42,884 - INFO - 📜 4 empréstimos listados.
+2025-11-13 14:00:42,884 - INFO - 📜 4 empréstimos listados.
+2025-11-13 14:00:42,884 - INFO - 📜 4 empréstimos listados.
+2025-11-13 14:00:42,884 - INFO - 📜 4 empréstimos listados.
+2025-11-13 14:00:45,434 - INFO - ✏️ Livro 12 atualizado com sucesso.
+2025-11-13 14:00:45,434 - INFO - ✏️ Livro 12 atualizado com sucesso.
+2025-11-13 14:00:45,434 - INFO - ✏️ Livro 12 atualizado com sucesso.
+2025-11-13 14:00:45,434 - INFO - ✏️ Livro 12 atualizado com sucesso.
+2025-11-13 14:00:45,434 - INFO - ✏️ Livro 12 atualizado com sucesso.
+2025-11-13 14:00:45,436 - INFO - ✅ Empréstimo registrado: O Código Da Vinci → Bianca
+2025-11-13 14:00:45,436 - INFO - ✅ Empréstimo registrado: O Código Da Vinci → Bianca
+2025-11-13 14:00:45,436 - INFO - ✅ Empréstimo registrado: O Código Da Vinci → Bianca
+2025-11-13 14:00:45,436 - INFO - ✅ Empréstimo registrado: O Código Da Vinci → Bianca
+2025-11-13 14:00:45,436 - INFO - ✅ Empréstimo registrado: O Código Da Vinci → Bianca
+2025-11-13 14:00:46,176 - INFO - 📜 5 empréstimos listados.
+2025-11-13 14:00:46,176 - INFO - 📜 5 empréstimos listados.
+2025-11-13 14:00:46,176 - INFO - 📜 5 empréstimos listados.
+2025-11-13 14:00:46,176 - INFO - 📜 5 empréstimos listados.
+2025-11-13 14:00:46,176 - INFO - 📜 5 empréstimos listados.
+2025-11-13 14:00:50,694 - INFO - ✏️ Livro 11 atualizado com sucesso.
+2025-11-13 14:00:50,694 - INFO - ✏️ Livro 11 atualizado com sucesso.
+2025-11-13 14:00:50,694 - INFO - ✏️ Livro 11 atualizado com sucesso.
+2025-11-13 14:00:50,694 - INFO - ✏️ Livro 11 atualizado com sucesso.
+2025-11-13 14:00:50,694 - INFO - ✏️ Livro 11 atualizado com sucesso.
+2025-11-13 14:00:50,696 - INFO - ✅ Empréstimo registrado: Orgulho e Preconceito → Breno
+2025-11-13 14:00:50,696 - INFO - ✅ Empréstimo registrado: Orgulho e Preconceito → Breno
+2025-11-13 14:00:50,696 - INFO - ✅ Empréstimo registrado: Orgulho e Preconceito → Breno
+2025-11-13 14:00:50,696 - INFO - ✅ Empréstimo registrado: Orgulho e Preconceito → Breno
+2025-11-13 14:00:50,696 - INFO - ✅ Empréstimo registrado: Orgulho e Preconceito → Breno
+2025-11-13 14:00:51,640 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:00:51,640 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:00:51,640 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:00:51,640 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:00:51,640 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:00:56,625 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:00:56,625 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:00:56,625 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:00:56,625 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:00:56,625 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:01:05,424 - INFO - ✅ Autor 'Joaquim Maria Machado de Assis' cadastrado com sucesso.
+2025-11-13 14:01:05,424 - INFO - ✅ Autor 'Joaquim Maria Machado de Assis' cadastrado com sucesso.
+2025-11-13 14:01:05,424 - INFO - ✅ Autor 'Joaquim Maria Machado de Assis' cadastrado com sucesso.
+2025-11-13 14:01:05,424 - INFO - ✅ Autor 'Joaquim Maria Machado de Assis' cadastrado com sucesso.
+2025-11-13 14:01:05,424 - INFO - ✅ Autor 'Joaquim Maria Machado de Assis' cadastrado com sucesso.
+2025-11-13 14:01:14,435 - INFO - ✅ Autor 'Joanne Rowling' cadastrado com sucesso.
+2025-11-13 14:01:14,435 - INFO - ✅ Autor 'Joanne Rowling' cadastrado com sucesso.
+2025-11-13 14:01:14,435 - INFO - ✅ Autor 'Joanne Rowling' cadastrado com sucesso.
+2025-11-13 14:01:14,435 - INFO - ✅ Autor 'Joanne Rowling' cadastrado com sucesso.
+2025-11-13 14:01:14,435 - INFO - ✅ Autor 'Joanne Rowling' cadastrado com sucesso.
+2025-11-13 14:01:24,840 - INFO - ✏️ Usuário 7 atualizado com sucesso.
+2025-11-13 14:01:24,840 - INFO - ✏️ Usuário 7 atualizado com sucesso.
+2025-11-13 14:01:24,840 - INFO - ✏️ Usuário 7 atualizado com sucesso.
+2025-11-13 14:01:24,840 - INFO - ✏️ Usuário 7 atualizado com sucesso.
+2025-11-13 14:01:24,840 - INFO - ✏️ Usuário 7 atualizado com sucesso.
+2025-11-13 14:01:29,991 - INFO - 🗑️ Usuário 7 removido com sucesso.
+2025-11-13 14:01:29,991 - INFO - 🗑️ Usuário 7 removido com sucesso.
+2025-11-13 14:01:29,991 - INFO - 🗑️ Usuário 7 removido com sucesso.
+2025-11-13 14:01:29,991 - INFO - 🗑️ Usuário 7 removido com sucesso.
+2025-11-13 14:01:29,991 - INFO - 🗑️ Usuário 7 removido com sucesso.
+2025-11-13 14:01:32,121 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:01:32,121 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:01:32,121 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:01:32,121 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:01:32,121 - INFO - 📜 6 empréstimos listados.
+2025-11-13 14:01:35,836 - INFO - ✏️ Livro 9 atualizado com sucesso.
+2025-11-13 14:01:35,836 - INFO - ✏️ Livro 9 atualizado com sucesso.
+2025-11-13 14:01:35,836 - INFO - ✏️ Livro 9 atualizado com sucesso.
+2025-11-13 14:01:35,836 - INFO - ✏️ Livro 9 atualizado com sucesso.
+2025-11-13 14:01:35,836 - INFO - ✏️ Livro 9 atualizado com sucesso.
+2025-11-13 14:01:35,901 - INFO - ✅ Empréstimo ID 9 removido com sucesso.
+2025-11-13 14:01:35,901 - INFO - ✅ Empréstimo ID 9 removido com sucesso.
+2025-11-13 14:01:35,901 - INFO - ✅ Empréstimo ID 9 removido com sucesso.
+2025-11-13 14:01:35,901 - INFO - ✅ Empréstimo ID 9 removido com sucesso.
+2025-11-13 14:01:35,901 - INFO - ✅ Empréstimo ID 9 removido com sucesso.
+2025-11-13 14:01:35,903 - INFO - ✅ Empréstimo ID 9 removido com sucesso.
+2025-11-13 14:01:35,903 - INFO - ✅ Empréstimo ID 9 removido com sucesso.
+2025-11-13 14:01:35,903 - INFO - ✅ Empréstimo ID 9 removido com sucesso.
+2025-11-13 14:01:35,903 - INFO - ✅ Empréstimo ID 9 removido com sucesso.
+2025-11-13 14:01:35,903 - INFO - ✅ Empréstimo ID 9 removido com sucesso.
+2025-11-13 14:01:35,968 - INFO - ✏️ Livro 11 atualizado com sucesso.
+2025-11-13 14:01:35,968 - INFO - ✏️ Livro 11 atualizado com sucesso.
+2025-11-13 14:01:35,968 - INFO - ✏️ Livro 11 atualizado com sucesso.
+2025-11-13 14:01:35,968 - INFO - ✏️ Livro 11 atualizado com sucesso.
+2025-11-13 14:01:35,968 - INFO - ✏️ Livro 11 atualizado com sucesso.
+2025-11-13 14:01:36,020 - INFO - ✅ Empréstimo ID 11 removido com sucesso.
+2025-11-13 14:01:36,020 - INFO - ✅ Empréstimo ID 11 removido com sucesso.
+2025-11-13 14:01:36,020 - INFO - ✅ Empréstimo ID 11 removido com sucesso.
+2025-11-13 14:01:36,020 - INFO - ✅ Empréstimo ID 11 removido com sucesso.
+2025-11-13 14:01:36,020 - INFO - ✅ Empréstimo ID 11 removido com sucesso.
+2025-11-13 14:01:36,022 - INFO - ✅ Empréstimo ID 11 removido com sucesso.
+2025-11-13 14:01:36,022 - INFO - ✅ Empréstimo ID 11 removido com sucesso.
+2025-11-13 14:01:36,022 - INFO - ✅ Empréstimo ID 11 removido com sucesso.
+2025-11-13 14:01:36,022 - INFO - ✅ Empréstimo ID 11 removido com sucesso.
+2025-11-13 14:01:36,022 - INFO - ✅ Empréstimo ID 11 removido com sucesso.
+2025-11-13 14:01:36,973 - INFO - 📜 4 empréstimos listados.
+2025-11-13 14:01:36,973 - INFO - 📜 4 empréstimos listados.
+2025-11-13 14:01:36,973 - INFO - 📜 4 empréstimos listados.
+2025-11-13 14:01:36,973 - INFO - 📜 4 empréstimos listados.
+2025-11-13 14:01:36,973 - INFO - 📜 4 empréstimos listados.
+2025-11-13 14:01:42,234 - INFO - 🗑️ Usuário 7 removido com sucesso.
+2025-11-13 14:01:42,234 - INFO - 🗑️ Usuário 7 removido com sucesso.
+2025-11-13 14:01:42,234 - INFO - 🗑️ Usuário 7 removido com sucesso.
+2025-11-13 14:01:42,234 - INFO - 🗑️ Usuário 7 removido com sucesso.
+2025-11-13 14:01:42,234 - INFO - 🗑️ Usuário 7 removido com sucesso.
+2025-11-13 14:01:49,228 - INFO - ✏️ Usuário 6 atualizado com sucesso.
+2025-11-13 14:01:49,228 - INFO - ✏️ Usuário 6 atualizado com sucesso.
+2025-11-13 14:01:49,228 - INFO - ✏️ Usuário 6 atualizado com sucesso.
+2025-11-13 14:01:49,228 - INFO - ✏️ Usuário 6 atualizado com sucesso.
+2025-11-13 14:01:49,228 - INFO - ✏️ Usuário 6 atualizado com sucesso.
+2025-11-13 14:02:02,560 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:02:02,560 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:02:02,560 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:02:02,560 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:02:02,560 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:02:12,256 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:02:12,256 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:02:12,256 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:02:12,256 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:02:12,256 - INFO - ✏️ Livro 13 atualizado com sucesso.
+2025-11-13 14:02:16,106 - INFO - 🗑️ Livro 11 removido com sucesso.
+2025-11-13 14:02:16,106 - INFO - 🗑️ Livro 11 removido com sucesso.
+2025-11-13 14:02:16,106 - INFO - 🗑️ Livro 11 removido com sucesso.
+2025-11-13 14:02:16,106 - INFO - 🗑️ Livro 11 removido com sucesso.
+2025-11-13 14:02:16,106 - INFO - 🗑️ Livro 11 removido com sucesso.

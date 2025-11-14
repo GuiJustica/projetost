@@ -10,5 +10,5 @@ print("📚 Livros:", livro_dao.listar())
 
 # Teste rápido para MockUsuarioDAO
 usuario_dao = MockUsuarioDAO()
-usuario_dao.criar(Usuario(None, "Ana", 0))
+usuario_dao.criar(Usuario("Ana"))
 print("👤 Usuários:", usuario_dao.listar())
