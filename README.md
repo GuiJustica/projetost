@@ -18,32 +18,55 @@ Um sistema modular para gerenciamento de livros, autores, usuários e empréstim
 
 ## 🧱 Arquitetura
 
-/src
-    /models
-    /repositories
-    /services
-    /controllers
-    /data
-    /dao
-    /exceptions
-    /logs
-    /ui
-    /validators
+    /src
 
-/tests
-    /fixtures
-    /mutation
-    /specific
-    /structural
-    /unit
-    /integration
-    /functional
-/logs
-/htmlcov
-/docs
-    projeto.md
-    plano_testes.md
-    relatorio.md
+        /models
+    
+        /repositories
+    
+        /services
+    
+        /controllers
+    
+        /data
+    
+        /dao
+    
+        /exceptions
+    
+        /logs
+    
+        /ui
+    
+        /validators
+
+    /tests
+    
+        /fixtures
+        
+        /mutation
+        
+        /specific
+        
+        /structural
+        
+        /unit
+        
+        /integration
+        
+        /functional
+        
+    /logs
+    
+    /htmlcov
+    
+    /docs
+    
+        projeto.md
+        
+        plano_testes.md
+        
+        relatorio.md
 
 ## 🧪 Testes
 Para rodar:
