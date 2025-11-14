@@ -10,7 +10,6 @@ Um sistema modular para gerenciamento de livros, autores, usuários e empréstim
 - Cadastro de usuários
 - Empréstimo e devolução
 - Validações internas
-- Usuários bloqueados
 - Persistência JSON
 - Testes unitários, integração e funcionais
 
@@ -18,36 +17,61 @@ Um sistema modular para gerenciamento de livros, autores, usuários e empréstim
 
 ## 🧱 Arquitetura
 
-/src
-    /models
-    /repositories
-    /services
-    /controllers
-    /data
-    /dao
-    /exceptions
-    /logs
-    /ui
-    /validators
+    /src
 
-/tests
-    /fixtures
-    /mutation
-    /specific
-    /structural
-    /unit
-    /integration
-    /functional
-/logs
-/htmlcov
-/docs
-    projeto.md
-    plano_testes.md
-    relatorio.md
+        /models
+    
+        /repositories
+    
+        /services
+    
+        /controllers
+    
+        /data
+    
+        /dao
+    
+        /exceptions
+    
+        /logs
+    
+        /ui
+    
+        /validators
+
+    /tests
+    
+        /fixtures
+        
+        /mutation
+        
+        /specific
+        
+        /structural
+        
+        /unit
+        
+        /integration
+        
+        /functional
+        
+    /logs
+    
+    /htmlcov
+    
+    /docs
+    
+        projeto.md
+        
+        plano_testes.md
+        
+        relatorio.md
 
 ## 🧪 Testes
 Para rodar:
-(venv) PS E:\projetost\src> pytest -v ../tests/unit/test_unit_geral.py
+(venv) ../../../src> pytest -v ../tests/unit/test_unit_geral.py
+
+
 
 
 ## 📦 Instalação
@@ -57,4 +81,6 @@ git clone https://github.com/GuiJustica/projetost
 pip install -r requirements.txt
 
 python main.py ou python main_ui.py
+
+Um erro pode occorer por conta do src. nas pastas de service e dao, caso ocorra, retire o src. dos imports
 
