@@ -36,3 +36,306 @@
 2025-11-14 02:01:57,285 - WARNING - ⚠️ Livro ou Usuário não encontrado para o Empréstimo ID 1.
 2025-11-14 02:01:57,285 - WARNING - ⚠️ Livro ou Usuário não encontrado para o Empréstimo ID 1.
 2025-11-14 02:01:57,285 - WARNING - ⚠️ Livro ou Usuário não encontrado para o Empréstimo ID 1.
+2025-11-14 13:36:39,843 - INFO - 👤 Serviço de autor inicializado.
+2025-11-14 13:37:19,317 - INFO - 👤 Serviço de autor inicializado.
+2025-11-14 13:37:46,054 - INFO - 👤 Serviço de autor inicializado.
+2025-11-14 13:37:59,336 - INFO - 👤 Serviço de autor inicializado.
+2025-11-14 13:37:59,348 - INFO - 📘 Serviço de livros inicializado.
+2025-11-14 13:37:59,348 - INFO - 📘 Serviço de livros inicializado.
+2025-11-14 13:38:47,991 - INFO - 👤 Serviço de autor inicializado.
+2025-11-14 13:38:47,994 - INFO - 📘 Serviço de livros inicializado.
+2025-11-14 13:38:47,994 - INFO - 📘 Serviço de livros inicializado.
+2025-11-14 13:38:48,043 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-14 13:38:48,043 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-14 13:38:48,043 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-14 13:39:14,324 - INFO - 👤 Serviço de autor inicializado.
+2025-11-14 13:39:14,327 - INFO - 📘 Serviço de livros inicializado.
+2025-11-14 13:39:14,327 - INFO - 📘 Serviço de livros inicializado.
+2025-11-14 13:39:14,330 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-14 13:39:14,330 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-14 13:39:14,330 - INFO - 👤 Serviço de usuários inicializado.
+2025-11-14 13:39:14,355 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-14 13:39:14,355 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-14 13:39:14,355 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-14 13:39:14,355 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-14 13:39:14,355 - INFO - 📖 Serviço de empréstimo inicializado.
+2025-11-14 13:39:14,440 - INFO - ✅ Autor 'George Orwell' cadastrado com sucesso.
+2025-11-14 13:39:14,440 - INFO - ✅ Autor 'George Orwell' cadastrado com sucesso.
+2025-11-14 13:39:14,440 - INFO - ✅ Autor 'George Orwell' cadastrado com sucesso.
+2025-11-14 13:39:14,440 - INFO - ✅ Autor 'George Orwell' cadastrado com sucesso.
+2025-11-14 13:39:14,440 - INFO - ✅ Autor 'George Orwell' cadastrado com sucesso.
+2025-11-14 13:39:14,499 - ERROR - Erro ao criar Autor: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,499 - ERROR - Erro ao criar Autor: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,499 - ERROR - Erro ao criar Autor: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,499 - ERROR - Erro ao criar Autor: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,499 - ERROR - Erro ao criar Autor: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,512 - INFO - ✅ Autor 'Orwell' cadastrado com sucesso.
+2025-11-14 13:39:14,512 - INFO - ✅ Autor 'Orwell' cadastrado com sucesso.
+2025-11-14 13:39:14,512 - INFO - ✅ Autor 'Orwell' cadastrado com sucesso.
+2025-11-14 13:39:14,512 - INFO - ✅ Autor 'Orwell' cadastrado com sucesso.
+2025-11-14 13:39:14,512 - INFO - ✅ Autor 'Orwell' cadastrado com sucesso.
+2025-11-14 13:39:14,512 - INFO - ✅ Autor 'Machado' cadastrado com sucesso.
+2025-11-14 13:39:14,512 - INFO - ✅ Autor 'Machado' cadastrado com sucesso.
+2025-11-14 13:39:14,512 - INFO - ✅ Autor 'Machado' cadastrado com sucesso.
+2025-11-14 13:39:14,512 - INFO - ✅ Autor 'Machado' cadastrado com sucesso.
+2025-11-14 13:39:14,512 - INFO - ✅ Autor 'Machado' cadastrado com sucesso.
+2025-11-14 13:39:14,528 - INFO - ✅ Autor 'Tolkien' cadastrado com sucesso.
+2025-11-14 13:39:14,528 - INFO - ✅ Autor 'Tolkien' cadastrado com sucesso.
+2025-11-14 13:39:14,528 - INFO - ✅ Autor 'Tolkien' cadastrado com sucesso.
+2025-11-14 13:39:14,528 - INFO - ✅ Autor 'Tolkien' cadastrado com sucesso.
+2025-11-14 13:39:14,528 - INFO - ✅ Autor 'Tolkien' cadastrado com sucesso.
+2025-11-14 13:39:14,528 - INFO - ✏️ Usuário 1 atualizado com sucesso.
+2025-11-14 13:39:14,528 - INFO - ✏️ Usuário 1 atualizado com sucesso.
+2025-11-14 13:39:14,528 - INFO - ✏️ Usuário 1 atualizado com sucesso.
+2025-11-14 13:39:14,528 - INFO - ✏️ Usuário 1 atualizado com sucesso.
+2025-11-14 13:39:14,528 - INFO - ✏️ Usuário 1 atualizado com sucesso.
+2025-11-14 13:39:14,534 - INFO - ✅ Autor 'J.K. Rowling' cadastrado com sucesso.
+2025-11-14 13:39:14,534 - INFO - ✅ Autor 'J.K. Rowling' cadastrado com sucesso.
+2025-11-14 13:39:14,534 - INFO - ✅ Autor 'J.K. Rowling' cadastrado com sucesso.
+2025-11-14 13:39:14,534 - INFO - ✅ Autor 'J.K. Rowling' cadastrado com sucesso.
+2025-11-14 13:39:14,534 - INFO - ✅ Autor 'J.K. Rowling' cadastrado com sucesso.
+2025-11-14 13:39:14,535 - INFO - 🗑️ Usuário 1 removido com sucesso.
+2025-11-14 13:39:14,535 - INFO - 🗑️ Usuário 1 removido com sucesso.
+2025-11-14 13:39:14,535 - INFO - 🗑️ Usuário 1 removido com sucesso.
+2025-11-14 13:39:14,535 - INFO - 🗑️ Usuário 1 removido com sucesso.
+2025-11-14 13:39:14,535 - INFO - 🗑️ Usuário 1 removido com sucesso.
+2025-11-14 13:39:14,540 - WARNING - Tentativa de remover usuário inexistente: ID 999
+2025-11-14 13:39:14,540 - WARNING - Tentativa de remover usuário inexistente: ID 999
+2025-11-14 13:39:14,540 - WARNING - Tentativa de remover usuário inexistente: ID 999
+2025-11-14 13:39:14,540 - WARNING - Tentativa de remover usuário inexistente: ID 999
+2025-11-14 13:39:14,540 - WARNING - Tentativa de remover usuário inexistente: ID 999
+2025-11-14 13:39:14,545 - INFO - ✅ Autor 'Isaac Asimov' cadastrado com sucesso.
+2025-11-14 13:39:14,545 - INFO - ✅ Autor 'Isaac Asimov' cadastrado com sucesso.
+2025-11-14 13:39:14,545 - INFO - ✅ Autor 'Isaac Asimov' cadastrado com sucesso.
+2025-11-14 13:39:14,545 - INFO - ✅ Autor 'Isaac Asimov' cadastrado com sucesso.
+2025-11-14 13:39:14,545 - INFO - ✅ Autor 'Isaac Asimov' cadastrado com sucesso.
+2025-11-14 13:39:14,545 - INFO - ✏️ Usuário 1 atualizado com sucesso.
+2025-11-14 13:39:14,545 - INFO - ✏️ Usuário 1 atualizado com sucesso.
+2025-11-14 13:39:14,545 - INFO - ✏️ Usuário 1 atualizado com sucesso.
+2025-11-14 13:39:14,545 - INFO - ✏️ Usuário 1 atualizado com sucesso.
+2025-11-14 13:39:14,545 - INFO - ✏️ Usuário 1 atualizado com sucesso.
+2025-11-14 13:39:14,546 - INFO - 🗑️ Usuário 1 removido com sucesso.
+2025-11-14 13:39:14,546 - INFO - 🗑️ Usuário 1 removido com sucesso.
+2025-11-14 13:39:14,546 - INFO - 🗑️ Usuário 1 removido com sucesso.
+2025-11-14 13:39:14,546 - INFO - 🗑️ Usuário 1 removido com sucesso.
+2025-11-14 13:39:14,546 - INFO - 🗑️ Usuário 1 removido com sucesso.
+2025-11-14 13:39:14,554 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,554 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,554 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,554 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,554 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,559 - ERROR - Erro ao criar usuário: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,559 - ERROR - Erro ao criar usuário: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,559 - ERROR - Erro ao criar usuário: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,559 - ERROR - Erro ao criar usuário: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,559 - ERROR - Erro ao criar usuário: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,563 - ERROR - Erro ao criar usuário: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,563 - ERROR - Erro ao criar usuário: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,563 - ERROR - Erro ao criar usuário: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,563 - ERROR - Erro ao criar usuário: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,563 - ERROR - Erro ao criar usuário: Entrada inválida no campo 'nome': O nome do usuário é obrigatório.
+2025-11-14 13:39:14,569 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,569 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,569 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,569 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,569 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,574 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,574 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,574 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,574 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,574 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,579 - ERROR - Erro ao criar livro: Entrada inválida no campo 'ano_publicacao': Entrada inválida no campo 'ano': não pode ser no futuro
+2025-11-14 13:39:14,579 - ERROR - Erro ao criar livro: Entrada inválida no campo 'ano_publicacao': Entrada inválida no campo 'ano': não pode ser no futuro
+2025-11-14 13:39:14,579 - ERROR - Erro ao criar livro: Entrada inválida no campo 'ano_publicacao': Entrada inválida no campo 'ano': não pode ser no futuro
+2025-11-14 13:39:14,579 - ERROR - Erro ao criar livro: Entrada inválida no campo 'ano_publicacao': Entrada inválida no campo 'ano': não pode ser no futuro
+2025-11-14 13:39:14,579 - ERROR - Erro ao criar livro: Entrada inválida no campo 'ano_publicacao': Entrada inválida no campo 'ano': não pode ser no futuro
+2025-11-14 13:39:14,585 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Entrada inválida no campo 'titulo': deve ter ao menos 3 caracteres
+2025-11-14 13:39:14,585 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Entrada inválida no campo 'titulo': deve ter ao menos 3 caracteres
+2025-11-14 13:39:14,585 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Entrada inválida no campo 'titulo': deve ter ao menos 3 caracteres
+2025-11-14 13:39:14,585 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Entrada inválida no campo 'titulo': deve ter ao menos 3 caracteres
+2025-11-14 13:39:14,585 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Entrada inválida no campo 'titulo': deve ter ao menos 3 caracteres
+2025-11-14 13:39:14,589 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,589 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,589 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,589 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,589 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,590 - ERROR - Erro ao criar livro: O livro 'O livro '1984' de George Orwell já está cadastrado.' já está cadastrado.
+2025-11-14 13:39:14,590 - ERROR - Erro ao criar livro: O livro 'O livro '1984' de George Orwell já está cadastrado.' já está cadastrado.
+2025-11-14 13:39:14,590 - ERROR - Erro ao criar livro: O livro 'O livro '1984' de George Orwell já está cadastrado.' já está cadastrado.
+2025-11-14 13:39:14,590 - ERROR - Erro ao criar livro: O livro 'O livro '1984' de George Orwell já está cadastrado.' já está cadastrado.
+2025-11-14 13:39:14,590 - ERROR - Erro ao criar livro: O livro 'O livro '1984' de George Orwell já está cadastrado.' já está cadastrado.
+2025-11-14 13:39:14,740 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,740 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,740 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,740 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,740 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,741 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,741 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,741 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,741 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,741 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,741 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,741 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,741 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,741 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,741 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,742 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,742 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,742 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,742 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,742 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,762 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,762 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,762 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,762 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,762 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,762 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,762 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,762 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,762 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,762 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,763 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,763 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,763 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,763 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,763 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,765 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,765 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,765 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,765 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,765 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,765 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,765 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,765 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,765 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,765 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,766 - INFO - ✅ Empréstimo ID 1 removido com sucesso.
+2025-11-14 13:39:14,766 - INFO - ✅ Empréstimo ID 1 removido com sucesso.
+2025-11-14 13:39:14,766 - INFO - ✅ Empréstimo ID 1 removido com sucesso.
+2025-11-14 13:39:14,766 - INFO - ✅ Empréstimo ID 1 removido com sucesso.
+2025-11-14 13:39:14,766 - INFO - ✅ Empréstimo ID 1 removido com sucesso.
+2025-11-14 13:39:14,773 - INFO - ✅ Usuário 'Paulo' cadastrado com sucesso.
+2025-11-14 13:39:14,773 - INFO - ✅ Usuário 'Paulo' cadastrado com sucesso.
+2025-11-14 13:39:14,773 - INFO - ✅ Usuário 'Paulo' cadastrado com sucesso.
+2025-11-14 13:39:14,773 - INFO - ✅ Usuário 'Paulo' cadastrado com sucesso.
+2025-11-14 13:39:14,773 - INFO - ✅ Usuário 'Paulo' cadastrado com sucesso.
+2025-11-14 13:39:14,774 - INFO - ✅ Livro 'Livro Raro' cadastrado com sucesso.
+2025-11-14 13:39:14,774 - INFO - ✅ Livro 'Livro Raro' cadastrado com sucesso.
+2025-11-14 13:39:14,774 - INFO - ✅ Livro 'Livro Raro' cadastrado com sucesso.
+2025-11-14 13:39:14,774 - INFO - ✅ Livro 'Livro Raro' cadastrado com sucesso.
+2025-11-14 13:39:14,774 - INFO - ✅ Livro 'Livro Raro' cadastrado com sucesso.
+2025-11-14 13:39:14,774 - INFO - ✏️ Livro Livro Raro atualizado com sucesso.
+2025-11-14 13:39:14,774 - INFO - ✏️ Livro Livro Raro atualizado com sucesso.
+2025-11-14 13:39:14,774 - INFO - ✏️ Livro Livro Raro atualizado com sucesso.
+2025-11-14 13:39:14,774 - INFO - ✏️ Livro Livro Raro atualizado com sucesso.
+2025-11-14 13:39:14,774 - INFO - ✏️ Livro Livro Raro atualizado com sucesso.
+2025-11-14 13:39:14,775 - INFO - ✅ Empréstimo registrado: Autor X → Paulo
+2025-11-14 13:39:14,775 - INFO - ✅ Empréstimo registrado: Autor X → Paulo
+2025-11-14 13:39:14,775 - INFO - ✅ Empréstimo registrado: Autor X → Paulo
+2025-11-14 13:39:14,775 - INFO - ✅ Empréstimo registrado: Autor X → Paulo
+2025-11-14 13:39:14,775 - INFO - ✅ Empréstimo registrado: Autor X → Paulo
+2025-11-14 13:39:14,792 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,792 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,792 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,792 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,792 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,792 - WARNING - ⚠️ Usuário não encontrado.
+2025-11-14 13:39:14,792 - WARNING - ⚠️ Usuário não encontrado.
+2025-11-14 13:39:14,792 - WARNING - ⚠️ Usuário não encontrado.
+2025-11-14 13:39:14,792 - WARNING - ⚠️ Usuário não encontrado.
+2025-11-14 13:39:14,792 - WARNING - ⚠️ Usuário não encontrado.
+2025-11-14 13:39:14,817 - INFO - ✅ Usuário 'Maria' cadastrado com sucesso.
+2025-11-14 13:39:14,817 - INFO - ✅ Usuário 'Maria' cadastrado com sucesso.
+2025-11-14 13:39:14,817 - INFO - ✅ Usuário 'Maria' cadastrado com sucesso.
+2025-11-14 13:39:14,817 - INFO - ✅ Usuário 'Maria' cadastrado com sucesso.
+2025-11-14 13:39:14,817 - INFO - ✅ Usuário 'Maria' cadastrado com sucesso.
+2025-11-14 13:39:14,817 - WARNING - ⚠️ Livro não encontrado.
+2025-11-14 13:39:14,817 - WARNING - ⚠️ Livro não encontrado.
+2025-11-14 13:39:14,817 - WARNING - ⚠️ Livro não encontrado.
+2025-11-14 13:39:14,817 - WARNING - ⚠️ Livro não encontrado.
+2025-11-14 13:39:14,817 - WARNING - ⚠️ Livro não encontrado.
+2025-11-14 13:39:14,836 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Título não pode estar vazio ou em branco.
+2025-11-14 13:39:14,836 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Título não pode estar vazio ou em branco.
+2025-11-14 13:39:14,836 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Título não pode estar vazio ou em branco.
+2025-11-14 13:39:14,836 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Título não pode estar vazio ou em branco.
+2025-11-14 13:39:14,836 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Título não pode estar vazio ou em branco.
+2025-11-14 13:39:14,854 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Título não pode estar vazio ou em branco.
+2025-11-14 13:39:14,854 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Título não pode estar vazio ou em branco.
+2025-11-14 13:39:14,854 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Título não pode estar vazio ou em branco.
+2025-11-14 13:39:14,854 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Título não pode estar vazio ou em branco.
+2025-11-14 13:39:14,854 - ERROR - Erro ao criar livro: Entrada inválida no campo 'titulo': Título não pode estar vazio ou em branco.
+2025-11-14 13:39:14,872 - INFO - ✅ Livro 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' cadastrado com sucesso.
+2025-11-14 13:39:14,872 - INFO - ✅ Livro 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' cadastrado com sucesso.
+2025-11-14 13:39:14,872 - INFO - ✅ Livro 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' cadastrado com sucesso.
+2025-11-14 13:39:14,872 - INFO - ✅ Livro 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' cadastrado com sucesso.
+2025-11-14 13:39:14,872 - INFO - ✅ Livro 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' cadastrado com sucesso.
+2025-11-14 13:39:14,877 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,877 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,877 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,877 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,877 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,879 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,879 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,879 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,879 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,879 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,884 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,884 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,884 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,884 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,884 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,886 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,886 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,886 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,886 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,886 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,893 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,893 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,893 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,893 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,893 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,894 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,894 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,894 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,894 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,894 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,896 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,896 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,896 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,896 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,896 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,896 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,896 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,896 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,896 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,896 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,914 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,914 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,914 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,914 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,914 - INFO - ✅ Usuário 'Guilherme' cadastrado com sucesso.
+2025-11-14 13:39:14,915 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,915 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,915 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,915 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,915 - INFO - ✅ Livro '1984' cadastrado com sucesso.
+2025-11-14 13:39:14,917 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,917 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,917 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,917 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,917 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,917 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,917 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,917 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,917 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,917 - INFO - ✅ Empréstimo registrado: George Orwell → Guilherme
+2025-11-14 13:39:14,918 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,918 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,918 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,918 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,918 - INFO - ✏️ Livro 1984 atualizado com sucesso.
+2025-11-14 13:39:14,918 - INFO - ✅ Empréstimo ID 1 removido com sucesso.
+2025-11-14 13:39:14,918 - INFO - ✅ Empréstimo ID 1 removido com sucesso.
+2025-11-14 13:39:14,918 - INFO - ✅ Empréstimo ID 1 removido com sucesso.
+2025-11-14 13:39:14,918 - INFO - ✅ Empréstimo ID 1 removido com sucesso.
+2025-11-14 13:39:14,918 - INFO - ✅ Empréstimo ID 1 removido com sucesso.

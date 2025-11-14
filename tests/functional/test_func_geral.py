@@ -13,7 +13,7 @@ def controller():
 
 # 1️⃣ Fluxo completo com autor, livro e usuário
 def test_fluxo_completo_funcional(controller):
-    autor = controller.autores_repo.adicionar(Autor("George Orwell", "Escritor britânico"))
+    autor = controller.autor_repo.adicionar(Autor("George Orwell", "Escritor britânico"))
     livro = controller.livros_repo.adicionar(Livro(1, "1984", autor.nome, 1949))
     usuario = controller.usuarios_repo.adicionar(Usuario("Alice"))
 
@@ -30,7 +30,7 @@ def test_fluxo_completo_funcional(controller):
 
 # 2️⃣ Empréstimo de livro indisponível
 def test_emprestar_livro_indisponivel_funcional(controller):
-    autor = controller.autores_repo.adicionar(Autor("J.R.R. Tolkien", "Autor britânico"))
+    autor = controller.autor_repo.adicionar(Autor("J.R.R. Tolkien", "Autor britânico"))
     livro = controller.livros_repo.adicionar(Livro(1, "O Hobbit", autor.nome, 1937))
     usuario1 = controller.usuarios_repo.adicionar(Usuario("Bruno"))
     usuario2 = controller.usuarios_repo.adicionar(Usuario("Clara"))
@@ -44,11 +44,11 @@ def test_emprestar_livro_indisponivel_funcional(controller):
 
 # 3️⃣ Cadastro e atualização de autor
 def test_cadastro_e_atualizacao_autor(controller):
-    autor = controller.autores_repo.adicionar(Autor("Machado de Assis", "Romancista brasileiro"))
+    autor = controller.autor_repo.adicionar(Autor("Machado de Assis", "Romancista brasileiro"))
     autor.descricao = "Romancista e contista brasileiro"
-    controller.autores_repo.atualizar(autor.id, autor)
+    controller.autor_repo.atualizar(autor.id, autor)
 
-    recuperado = controller.autores_repo.buscar_por_id(autor.id)
+    recuperado = controller.autor_repo.buscar_por_id(autor.id)
     assert recuperado.descricao == "Romancista e contista brasileiro"
 
 
@@ -63,8 +63,8 @@ def test_validacao_funcional(controller):
 
 # 5️⃣ Fluxo com múltiplos autores e livros
 def test_multiplos_autores_e_livros(controller):
-    a1 = controller.autores_repo.adicionar(Autor("Robert C. Martin", "Engenheiro de software"))
-    a2 = controller.autores_repo.adicionar(Autor("Martin Fowler", "Arquiteto de software"))
+    a1 = controller.autor_repo.adicionar(Autor("Robert C. Martin", "Engenheiro de software"))
+    a2 = controller.autor_repo.adicionar(Autor("Martin Fowler", "Arquiteto de software"))
 
     l1 = controller.livros_repo.adicionar(Livro(1, "Clean Code", a1.nome, 2008))
     l2 = controller.livros_repo.adicionar(Livro(2, "Refactoring", a2.nome, 1999))
@@ -88,7 +88,7 @@ def test_devolver_inexistente_funcional(controller):
 
 # 7️⃣ Listagem e filtro de livros disponíveis
 def test_listar_livros_disponiveis_funcional(controller):
-    autor = controller.autores_repo.adicionar(Autor("Saint-Exupéry", "Escritor francês"))
+    autor = controller.autor_repo.adicionar(Autor("Saint-Exupéry", "Escritor francês"))
     l1 = controller.livros_repo.adicionar(Livro(1, "O Pequeno Príncipe", autor.nome, 1943))
     l2 = controller.livros_repo.adicionar(Livro(2, "Voo Noturno", autor.nome, 1931))
     u = controller.usuarios_repo.adicionar(Usuario("Gabriel"))

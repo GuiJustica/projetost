@@ -1,6 +1,6 @@
 import os
 import logging
-from config import carregar_config
+from  src.config import carregar_config
 
 def configurar_logger():
     config = carregar_config()

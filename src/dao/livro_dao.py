@@ -1,10 +1,10 @@
 
 #src/dao/livro_dao.py
-from dao.database import criar_conexao
-from models.livro import Livro
+from src.dao.database import criar_conexao
+from src.models.livro import Livro
 
 import sqlite3
-from config import DB_PATH
+from src.config import DB_PATH
 
 
 class LivroDAO:

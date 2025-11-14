@@ -1,7 +1,7 @@
 # src/models/emprestimo.py
 from datetime import datetime, timedelta
-from models.usuario import Usuario
-from models.livro import Livro
+from src.models.usuario import Usuario
+from src.models.livro import Livro
 
 class Emprestimo:
     """

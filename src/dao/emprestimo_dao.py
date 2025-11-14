@@ -1,14 +1,14 @@
 # src/dao/emprestimo_dao.py
 import sqlite3
-from models.emprestimo import Emprestimo
-from dao.database import criar_conexao
-from config import DB_PATH
+from src.models.emprestimo import Emprestimo
+from src.dao.database import criar_conexao
+from src.config import DB_PATH
 from datetime import datetime
-from dao.usuario_dao import UsuarioDAO
-from dao.livro_dao import LivroDAO
+from src.dao.usuario_dao import UsuarioDAO
+from src.dao.livro_dao import LivroDAO
 from typing import Optional
 
-from logger_config import configurar_logger
+from src.logger_config import configurar_logger
 logger = configurar_logger()
 class EmprestimoDAO:
 

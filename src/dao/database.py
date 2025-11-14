@@ -1,7 +1,7 @@
 import sqlite3
 import os
 import logging
-from config import DB_PATH  # Supondo que DB_PATH seja um caminho absoluto do banco de dados
+from src.config import DB_PATH
 
 def criar_conexao():
     """Cria a conexão com o banco de dados"""

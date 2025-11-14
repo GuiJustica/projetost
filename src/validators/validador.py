@@ -1,7 +1,7 @@
 #src/validators/validador.py
 
 from datetime import datetime
-from exceptions.erros import (
+from src.exceptions.erros import (
     BibliotecaError,
     LivroDuplicadoError,
     EntradaInvalidaError,

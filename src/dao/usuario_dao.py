@@ -1,8 +1,8 @@
 
-from dao.database import criar_conexao
-from models.usuario import Usuario
+from src.dao.database import criar_conexao
+from  src.models.usuario import Usuario
 import sqlite3
-from config import DB_PATH
+from  src.config import DB_PATH
 
 
 class UsuarioDAO:

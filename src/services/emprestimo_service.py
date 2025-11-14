@@ -1,13 +1,13 @@
 from datetime import datetime, timedelta
 from typing import Optional, List  # Importando o List
-from models.emprestimo import Emprestimo
-from services.usuario_service import UsuarioService
-from services.livro_service import LivroService
-from logger_config import configurar_logger
-from dao.emprestimo_dao import EmprestimoDAO
-from dao.database import criar_conexao
-from dao.livro_dao import LivroDAO
-from exceptions.erros import EntradaInvalidaError, LivroIndisponivelError
+from src.models.emprestimo import Emprestimo
+from src.services.usuario_service import UsuarioService
+from src.services.livro_service import LivroService
+from src.logger_config import configurar_logger
+from src.dao.emprestimo_dao import EmprestimoDAO
+from src.dao.database import criar_conexao
+from src.dao.livro_dao import LivroDAO
+from src.exceptions.erros import EntradaInvalidaError, LivroIndisponivelError
 
 
 logger = configurar_logger()

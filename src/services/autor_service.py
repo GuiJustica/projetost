@@ -1,13 +1,13 @@
 from __future__ import annotations
 from typing import Optional, List
-from models.autor import Autor
-from dao.autor_dao import AutorDAO
-from validators.validador import Validador
-from exceptions.erros import BibliotecaError
-from logger_config import configurar_logger
-from dao.database import criar_conexao
-from validators.validador import Validador
-from exceptions.erros import EntradaInvalidaError
+from src.models.autor import Autor
+from src.dao.autor_dao import AutorDAO
+from src.validators.validador import Validador
+from src.exceptions.erros import BibliotecaError
+from src.logger_config import configurar_logger
+from src.dao.database import criar_conexao
+from src.validators.validador import Validador
+from src.exceptions.erros import EntradaInvalidaError
 
 
 logger = configurar_logger()

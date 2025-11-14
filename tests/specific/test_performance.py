@@ -23,3 +23,15 @@ def test_emprestimos_em_massa(benchmark, controller):
                 pass
 
     benchmark(emprestar_tudo)
+@pytest.mark.benchmark(group="criacao_massa")
+def test_criacao_usuarios_livros_em_massa(benchmark):
+    def criar_usuarios_livros():
+        usuarios = [Usuario(f"User{i}") for i in range(1000)]
+        livros = [Livro(i + 1, f"Livro{i}", "Autor", 2000) for i in range(1000)]
+        return usuarios, livros
+
+    usuarios, livros = benchmark(criar_usuarios_livros)
+
+    # validação simples
+    assert len(usuarios) == 1000
+    assert len(livros) == 1000

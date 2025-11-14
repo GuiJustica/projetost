@@ -1,8 +1,8 @@
 
-from dao.database import criar_conexao
-from models.autor import Autor
+from src.dao.database import criar_conexao
+from src.models.autor import Autor
 import sqlite3
-from config import DB_PATH
+from src.config import DB_PATH
 
 
 class AutorDAO:

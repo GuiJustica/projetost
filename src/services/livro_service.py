@@ -1,11 +1,11 @@
 from __future__ import annotations
 from typing import Optional, List
-from models.livro import Livro
-from dao.livro_dao import LivroDAO
-from validators.validador import Validador
-from exceptions.erros import BibliotecaError,LivroDuplicadoError
-from logger_config import configurar_logger
-from dao.database import criar_conexao
+from src.models.livro import Livro
+from src.dao.livro_dao import LivroDAO
+from src.validators.validador import Validador
+from src.exceptions.erros import BibliotecaError,LivroDuplicadoError
+from src.logger_config import configurar_logger
+from src.dao.database import criar_conexao
 
 
 
