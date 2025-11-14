@@ -10,7 +10,6 @@ Um sistema modular para gerenciamento de livros, autores, usuários e empréstim
 - Cadastro de usuários
 - Empréstimo e devolução
 - Validações internas
-- Usuários bloqueados
 - Persistência JSON
 - Testes unitários, integração e funcionais
 
